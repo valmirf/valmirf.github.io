@@ -157,20 +157,59 @@
       }).join(""));
     })(),
 
-    /* Texto anotado com mapa de atenção abaixo. */
-    text: svg(`
-      <rect x="34" y="30" width="332" height="150" fill="${I}" opacity=".05" stroke="${G}" stroke-width="2.5"/>
-      ${[0,1,2,3].map(i=>{const y=54+i*32, w=[286,254,300,196][i];
-        return `<rect x="52" y="${y}" width="${w}" height="13" rx="6" fill="${I}" opacity=".24"/>`;}).join("")}
-      <rect x="52" y="86" width="74" height="13" rx="6" fill="${A}" opacity=".9"/>
-      <rect x="196" y="118" width="96" height="13" rx="6" fill="${A}" opacity=".9"/>
-      <rect x="52" y="150" width="58" height="13" rx="6" fill="${A}" opacity=".55"/>
-      ${Array.from({length: 16}, (_, i) => {
-        const op = [.1,.5,.2,.85,.15,.35,.7,.12,.45,.9,.2,.3,.6,.15,.75,.25][i];
-        return `<rect x="${34+i*21}" y="212" width="18" height="52" rx="2" fill="${A}" opacity="${op}"/>`;
-      }).join("")}
-      <path d="M34 274h332" stroke="${G}" stroke-width="2.5"/>
-    `),
+    /* Redação: a página manuscrita à esquerda, com uma região reconhecida,
+       e a grade de critérios à direita sendo pontuada. Visão de um lado,
+       PLN do outro, ligados pela linha de chamada. */
+    text: (() => {
+      const LINHAS = [
+        { y: 56,  p: [28, 20, 40, 24, 34] },
+        { y: 90,  p: [22, 38, 16, 42, 28] },
+        { y: 124, p: [34, 26, 44, 22] },
+        { y: 158, p: [26, 44, 20, 36, 28] },
+        { y: 192, p: [30, 24, 40, 32, 26] },
+        { y: 226, p: [22, 46, 28, 38] },
+        { y: 260, p: [34, 26, 30] },
+      ];
+      const LIDA = 2;   /* a linha dentro da caixa de reconhecimento */
+
+      /* palavras como barras curtas: é assim que texto se lê em miniatura */
+      const texto = LINHAS.map((l, li) => {
+        let x = 36;
+        return l.p.map((w) => {
+          const r = `<rect x="${x}" y="${l.y - 7}" width="${w}" height="7" rx="3.5"
+                      fill="${li === LIDA ? A : I}" opacity="${li === LIDA ? .95 : .34}"/>`;
+          x += w + 6;
+          return r;
+        }).join("");
+      }).join("");
+
+      /* critérios: rótulo curto e a barra de pontuação atribuída */
+      const NOTAS = [.92, .68, .84, .45, .74];
+      const criterios = NOTAS.map((n, i) => {
+        const y = 44 + i * 46;
+        return `
+          <rect x="266" y="${y}" width="42" height="6" rx="3" fill="${I}" opacity=".4"/>
+          <rect x="266" y="${y + 13}" width="104" height="9" rx="4.5" fill="${I}" opacity=".14"/>
+          <rect x="266" y="${y + 13}" width="${Math.round(104 * n)}" height="9" rx="4.5"
+                fill="${A}" opacity="${.45 + n * .5}"/>`;
+      }).join("");
+
+      return svg(`
+        <rect x="18" y="18" width="214" height="264" rx="3" fill="${I}" opacity=".06"
+              stroke="${G}" stroke-width="3"/>
+        ${LINHAS.map(l => `<path d="M30 ${l.y + 4}h190" stroke="${G}" stroke-width="1.6" opacity=".38"/>`).join("")}
+        <rect x="30" y="${LINHAS[LIDA].y - 20}" width="190" height="30" fill="${A}" opacity=".1"/>
+        <rect x="30" y="${LINHAS[LIDA].y - 20}" width="190" height="30" fill="none"
+              stroke="${A}" stroke-width="3.5"/>
+        <rect x="30" y="${LINHAS[LIDA].y - 20}" width="66" height="15" rx="2" fill="${A}"/>
+        ${texto}
+        <path d="M220 ${LINHAS[LIDA].y - 5}h32" stroke="${A}" stroke-width="2.5"
+              stroke-dasharray="7 5" fill="none"/>
+        <rect x="252" y="24" width="132" height="252" rx="3" fill="${I}" opacity=".05"
+              stroke="${G}" stroke-width="2.5"/>
+        ${criterios}
+      `);
+    })(),
 
     /* Prancha de CAA: tira de sentença acima, grade de pictogramas, um selecionado.
        Os símbolos são desenhados no registro do ARASAAC: traço grosso, forma cheia,
