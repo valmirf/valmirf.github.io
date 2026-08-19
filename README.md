@@ -6,7 +6,7 @@ JavaScript.
 ## Estrutura
 
 ```
-index.html            Início — nome, uma linha e a vitrine dos 7 projetos
+index.html            Início — nome, uma linha e a vitrine dos 8 projetos
 perfil.html           Perfil — bio, formação e trajetória
 pesquisa.html         Pesquisa
 projetos.html         Lista dos projetos
@@ -15,7 +15,7 @@ orientandos.html      Orientandos atuais e concluídos
 ensino.html           Disciplinas e serviço acadêmico
 contato.html          Contato
 
-projetos/<id>/index.html   Uma página por projeto (7 no total)
+projetos/<id>/index.html   Uma página por projeto (8 no total)
 
 assets/css/style.css       Todo o visual
 assets/js/data.js          ← TODO O CONTEÚDO fica aqui
@@ -93,8 +93,8 @@ layout.
 
 ### Se o navegador insistir na versão antiga
 
-Os arquivos são carregados com `?v=10`. Suba esse número em todos os `.html`
-(`?v=11`) e o navegador busca a versão nova. Só é necessário quando você publica
+Os arquivos são carregados com `?v=61`. Suba esse número em todos os `.html`
+(`?v=62`) e o navegador busca a versão nova. Só é necessário quando você publica
 uma alteração e ela não aparece.
 
 ## Ver localmente
@@ -107,19 +107,17 @@ Depois abra <http://localhost:4321>.
 
 ## Publicar no GitHub Pages
 
-1. Crie um repositório chamado exatamente **`valmirf.github.io`**.
-2. Envie estes arquivos para a branch `main`:
+O site já está no ar em **https://valmirf.github.io**, servido pelo repositório
+[valmirf/valmirf.github.io](https://github.com/valmirf/valmirf.github.io).
+
+Para publicar uma alteração:
 
 ```bash
-git init && git add . && git commit -m "Site pessoal"
-git branch -M main
-git remote add origin https://github.com/valmirf/valmirf.github.io.git
-git push -u origin main
+git add -A && git commit -m "o que mudou" && git push
 ```
 
-3. Em *Settings → Pages*, escolha a branch `main` e a pasta `/ (root)`.
-
-O `.nojekyll` já está incluído.
+O build do GitHub Pages leva cerca de um minuto. O `PRODUCT.md` e as notas
+internas ficam fora do repositório, pelo `.gitignore`.
 
 ## Decisões de design (para não desfazer sem querer)
 
