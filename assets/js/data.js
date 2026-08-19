@@ -376,8 +376,9 @@ const SITE = {
       en: "I supervise in the Academic Master's in Applied Informatics (PPGIA/UFRPE) and in the undergraduate Computer Science program. I have supervised more than twenty completed projects — several of which led to publications at international conferences and journals.",
     },
     current: [
-      /* PREENCHER: tema de cada um. O renderizador aceita a entrada sem tema,
-         mas é o título que dá substância à lista. */
+      /* Orientação em andamento pode ficar sem `topic`: enquanto o tema não
+         está definido, a linha simplesmente não aparece. Acrescente
+         topic: { pt: "...", en: "..." } quando o título fechar. */
       { name: "Katisshaline Fazane dos Santos", since: "2026.1", level: { pt: "Mestrado", en: "Master's" } },
       { name: "Lucas Nascimento Tavora", since: "2026.1", level: { pt: "Mestrado", en: "Master's" } },
       { name: "Lucas Matheus do N. Alves", since: "2026.1", level: { pt: "Graduação", en: "Undergraduate" } },
