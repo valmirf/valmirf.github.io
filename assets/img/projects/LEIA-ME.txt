@@ -1,0 +1,33 @@
+FIGURAS E FOTOS DOS PROJETOS
+============================
+
+Coloque aqui a imagem de cada projeto, com o nome do id do projeto:
+
+  mathaide.jpg      professor fotografando a atividade / tela do app
+  banhistas.jpg     imagem de praia com as caixas de detecção desenhadas
+  myfood.jpg        prato segmentado, saída do modelo
+  cromossomos.jpg   metáfase com as regiões marcadas
+  gestos.jpg        gesto de mão / gráfico da fronteira de Pareto
+  nlp-pt.jpg        redação com a pontuação marcada
+  clustering.jpg    gráfico de dispersão com os grupos
+
+Proporção 4:3 (ex.: 1200x900 px). JPG ou PNG.
+
+Depois de salvar o arquivo, abra assets/js/data.js, ache o projeto e
+acrescente a linha img, assim:
+
+  {
+    id: "banhistas",
+    img: "assets/img/projects/banhistas.jpg",   <-- esta linha
+    ...
+  }
+
+A imagem substitui o desenho na vitrine da home, na lista de projetos,
+na página do projeto e em todas as publicações ligadas a ele.
+
+O QUE FUNCIONA MELHOR
+---------------------
+Figura de resultado do próprio artigo (a saída do modelo, o antes/depois,
+o gráfico) é mais forte que foto de ambiente. Uma foto genérica de praia
+ou de sala de aula decora, mas não prova nada — o desenho esquemático
+diz mais.

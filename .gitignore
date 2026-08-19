@@ -1,0 +1,7 @@
+# Notas internas de trabalho — não vão para o repositório público
+PRODUCT.md
+.impeccable/
+.claude/
+
+# Sistema
+.DS_Store
