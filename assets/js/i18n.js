@@ -24,7 +24,7 @@ const UI = {
     "nav.publications.d": "53 artigos, com filtro por tema",
     "nav.students.d": "Quem oriento e quem já concluiu",
     "nav.teaching.d": "Disciplinas e serviço acadêmico",
-    "nav.contact.d": "Parcerias, pós-doc e e-mail",
+    "nav.contact.d": "Parcerias, pós-doc, visita e e-mail",
     "link.email": "E-mail",
     "theme.toggle": "Alternar tema",
 
@@ -74,7 +74,7 @@ const UI = {
     "positions.title": "Atuação profissional",
 
     "contact.title": "Contato",
-    "contact.body": "Tenho interesse em <strong>parcerias de pesquisa</strong> e em receber <strong>pós-doutorandos</strong>, além de coorientações, bancas e projetos com empresas e órgãos públicos envolvendo inteligência artificial aplicada. Se o seu trabalho tem a ver com visão computacional, IA na educação ou acessibilidade, escreva.",
+    "contact.body": "Procuro <strong>parcerias de pesquisa</strong> e oportunidades de <strong>pós-doutorado</strong> ou <strong>professor visitante</strong>, de preferência no exterior, em grupos que trabalhem com visão computacional, inteligência artificial na educação ou acessibilidade. Um ano sabático está entre as possibilidades.<br><br>Também recebo convites para coorientações, bancas e projetos com empresas e órgãos públicos.",
     "contact.emailLabel": "E-mail",
     "contact.addressLabel": "Endereço",
     "contact.address": "Departamento de Computação — UFRPE<br>Rua Dom Manuel de Medeiros, s/n, Dois Irmãos<br>Recife — PE, 52171-900, Brasil",
@@ -104,7 +104,7 @@ const UI = {
     "nav.publications.d": "53 papers, filterable by topic",
     "nav.students.d": "Current and graduated students",
     "nav.teaching.d": "Courses and academic service",
-    "nav.contact.d": "Partnerships, postdocs, and email",
+    "nav.contact.d": "Partnerships, postdoc, visits, and email",
     "link.email": "Email",
     "theme.toggle": "Toggle theme",
 
@@ -154,7 +154,7 @@ const UI = {
     "positions.title": "Professional appointments",
 
     "contact.title": "Contact",
-    "contact.body": "I am interested in <strong>research partnerships</strong> and in hosting <strong>postdoctoral researchers</strong>, as well as co-supervision, thesis committees, and projects with companies and public bodies involving applied artificial intelligence. If your work touches computer vision, AI in education, or accessibility, write to me.",
+    "contact.body": "I am looking for <strong>research partnerships</strong> and for <strong>postdoctoral</strong> or <strong>visiting professor</strong> opportunities, preferably abroad, with groups working on computer vision, artificial intelligence in education, or accessibility. A sabbatical year is among the possibilities.<br><br>I also welcome invitations for co-supervision, thesis committees, and projects with companies and public bodies.",
     "contact.emailLabel": "Email",
     "contact.addressLabel": "Address",
     "contact.address": "Department of Computing — UFRPE<br>Rua Dom Manuel de Medeiros, s/n, Dois Irmãos<br>Recife — PE, 52171-900, Brazil",
