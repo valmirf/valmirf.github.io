@@ -376,20 +376,23 @@ const SITE = {
       en: "I supervise in the Academic Master's in Applied Informatics (PPGIA/UFRPE) and in the undergraduate Computer Science program. I have supervised more than twenty completed projects — several of which led to publications at international conferences and journals.",
     },
     current: [
-      /* FALTAM DOIS MESTRANDOS EM ANDAMENTO — o Valmir vai informar nome, ano de
-         início e tema. Copie o modelo abaixo, preencha e apague este comentário:
-
-      { name: "NOME", since: "ANO", level: { pt: "Mestrado", en: "Master's" },
-        topic: { pt: "TEMA EM PORTUGUÊS", en: "TOPIC IN ENGLISH" } },
-      */
+      /* PREENCHER: tema de cada um. O renderizador aceita a entrada sem tema,
+         mas é o título que dá substância à lista. */
+      { name: "Katisshaline Fazane dos Santos", since: "2026.1", level: { pt: "Mestrado", en: "Master's" } },
+      { name: "Lucas Nascimento Tavora", since: "2026.1", level: { pt: "Mestrado", en: "Master's" } },
+      { name: "Wellington Luis da Cunha", since: "2026.2", level: { pt: "Graduação", en: "Undergraduate" } },
+      { name: "Lucas Matheus do N. Alves", since: "2026.1", level: { pt: "Graduação", en: "Undergraduate" } },
     ],
     alumni: [
       { name: "Cicero Pereira de Lima Júnior", year: "2026", level: { pt: "Mestrado", en: "Master's" },
         topic: { pt: "Otimização multiobjetivo de algoritmos de reconhecimento de equações matemáticas do ensino fundamental", en: "Multi-objective optimization of elementary-school mathematical equation recognition" } },
+      /* PREENCHER: título do TCC destes três, que não veio na lista do SIGAA. */
+      { name: "Matheus Florentino S. C. G. dos Santos", year: "2026", level: { pt: "Graduação", en: "Undergraduate" } },
+      { name: "Edivaldo Leitão de A. Neto", year: "2026", level: { pt: "Graduação", en: "Undergraduate" } },
       { name: "Pedro Paulo Barros Interaminense", year: "2025", level: { pt: "Mestrado", en: "Master's" },
         topic: { pt: "Reconhecimento de caracteres manuscritos em dissertações e exercícios em escolas do Brasil", en: "Handwritten character recognition in Brazilian school essays and exercises" } },
-      { /* PREENCHER: ano de conclusão. */
-        name: "Diego Rafael Ferreira de Souza", level: { pt: "Graduação", en: "Undergraduate" },
+      { name: "Lucas Valentim Dias", year: "2025", level: { pt: "Graduação", en: "Undergraduate" } },
+      { name: "Diego Rafael Ferreira de Souza", year: "2024", level: { pt: "Graduação", en: "Undergraduate" },
         topic: { pt: "Fine-tuning de algoritmos de reconhecimento de gestos", en: "Fine-tuning of gesture recognition algorithms" } },
       { name: "Charles Nícollas Cavalcante Freitas", year: "2020", level: { pt: "Mestrado", en: "Master's" },
         topic: { pt: "Sistema automático de reconhecimento de alimentos para auxílio nutricional (MyFood)", en: "Automatic food recognition system for nutritional support (MyFood)" },

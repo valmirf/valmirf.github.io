@@ -661,7 +661,7 @@
     const s = SITE.supervision;
     const li = (x, when) => `
       <li><span class="people__n">${x.name}</span><span class="people__m">${L(x.level)}${when ? " · " + when : ""}</span>
-        <p class="people__t">${L(x.topic)}</p>
+        ${x.topic ? `<p class="people__t">${L(x.topic)}</p>` : ""}
         ${x.note ? `<p class="people__x">${L(x.note)}</p>` : ""}</li>`;
     return `
       <section class="block">
