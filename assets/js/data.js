@@ -387,7 +387,9 @@ const SITE = {
       { name: "Cicero Pereira de Lima Júnior", year: "2026", level: { pt: "Mestrado", en: "Master's" },
         topic: { pt: "Otimização multiobjetivo de algoritmos de reconhecimento de equações matemáticas do ensino fundamental", en: "Multi-objective optimization of elementary-school mathematical equation recognition" } },
       /* PREENCHER: título do TCC destes três, que não veio na lista do SIGAA. */
-      { name: "Matheus Florentino S. C. G. dos Santos", year: "2026", level: { pt: "Graduação", en: "Undergraduate" } },
+      { name: "Matheus Florentino S. C. G. dos Santos", year: "2026", level: { pt: "Graduação", en: "Undergraduate" },
+        topic: { pt: "Avaliação comparativa dos modelos CAN, SAN e SAM no reconhecimento de expressões matemáticas manuscritas",
+                 en: "A comparative evaluation of the CAN, SAN, and SAM models for handwritten mathematical expression recognition" } },
       { name: "Edivaldo Leitão de A. Neto", year: "2026", level: { pt: "Graduação", en: "Undergraduate" },
         topic: { pt: "Análise de comparação entre modelos de compreensão visual de documentos usando LoRA",
                  en: "A comparison of document visual understanding models using LoRA" } },
