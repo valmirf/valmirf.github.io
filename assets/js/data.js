@@ -14,15 +14,17 @@ const SITE = {
       en: "Associate Professor · UFRPE",
     },
     email: "valmir.macario@ufrpe.br",
+    /* A ordem aqui é a ordem na linha de links do site.
+       E-mail vem antes, montado no main.js. */
     links: {
-      lattes: "http://lattes.cnpq.br/4346898674852080",
+      linkedin: "https://www.linkedin.com/in/valmir-macario-filho-83b4027/",
+      github: "https://github.com/valmirf",
       scholar: "https://scholar.google.com.br/citations?user=-UpehpcAAAAJ",
       researchgate: "https://www.researchgate.net/profile/Valmir-Macario",
-      github: "https://github.com/valmirf",
-      linkedin: "https://www.linkedin.com/in/valmir-macario-filho-83b4027/",
       vcl: "https://dc.ufrpe.br/node/14",
       aibox: "https://aiboxlab.org",
       nees: "https://www.nees.ufal.br",
+      lattes: "http://lattes.cnpq.br/4346898674852080",
     },
   },
 
