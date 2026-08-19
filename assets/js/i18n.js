@@ -29,8 +29,8 @@ const UI = {
     "theme.toggle": "Alternar tema",
 
     "home.signature": "Prof. Valmir Macario · UFRPE",
-    "home.thesis": "Inteligência artificial de alcance social.",
-    "home.support": "Visão computacional e linguagem natural em saúde, educação, segurança e acessibilidade — em sistemas projetados para o equipamento que já existe no lugar.",
+    "home.thesis": "Inteligência artificial aplicada a problemas sociais.",
+    "home.support": "Visão computacional e linguagem natural em saúde, educação, segurança e acessibilidade — projetadas para o equipamento que já existe no lugar.",
     "home.toProjects": "Ver os projetos",
     "home.toProfile": "Sobre mim",
     "home.toPubs": "Ver as 53 publicações",
@@ -109,8 +109,8 @@ const UI = {
     "theme.toggle": "Toggle theme",
 
     "home.signature": "Prof. Valmir Macario · UFRPE",
-    "home.thesis": "Artificial intelligence with social reach.",
-    "home.support": "Computer vision and natural language in health, education, safety, and accessibility — in systems designed for the equipment already on site.",
+    "home.thesis": "Artificial intelligence applied to social problems.",
+    "home.support": "Computer vision and natural language in health, education, safety, and accessibility — designed for the equipment already on site.",
     "home.toProjects": "See the projects",
     "home.toProfile": "About me",
     "home.toPubs": "See all 53 publications",

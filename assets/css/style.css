@@ -199,8 +199,8 @@ html { caret-color: var(--link); scrollbar-color: var(--line-2) transparent; scr
 }
 .stage__thesis {
   font-size: clamp(2.1rem, 5vw, 3.3rem); font-weight: 600;
-  letter-spacing: -.032em; line-height: 1.06; margin: 0 0 1.1rem;
-  max-width: 17ch;
+  letter-spacing: -.032em; line-height: 1.07; margin: 0 0 1.1rem;
+  max-width: 18ch;
 }
 .stage__support {
   font-size: 1.02rem; color: var(--ink-2); max-width: 46ch; margin: 0;
