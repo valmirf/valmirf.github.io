@@ -74,7 +74,7 @@ const UI = {
     "positions.title": "Atuação profissional",
 
     "contact.title": "Contato",
-    "contact.body": "Procuro <strong>parcerias de pesquisa</strong> e oportunidades de <strong>pós-doutorado</strong> ou <strong>professor visitante</strong> em grupos que trabalhem com visão computacional, inteligência artificial na educação ou acessibilidade. Um ano sabático está entre as possibilidades.<br><br>Também recebo convites para coorientações, bancas e projetos com empresas e órgãos públicos.",
+    "contact.body": "Procuro <strong>parcerias de pesquisa</strong> e oportunidades de <strong>pós-doutorado</strong> ou <strong>professor visitante</strong> em grupos que trabalhem com visão computacional, inteligência artificial na educação ou acessibilidade. Um ano sabático está entre as possibilidades.<br><br>Também recebo convites para parcerias, bancas e projetos com empresas e órgãos públicos.",
     "contact.emailLabel": "E-mail",
     "contact.addressLabel": "Endereço",
     "contact.address": "Departamento de Computação — UFRPE<br>Rua Dom Manuel de Medeiros, s/n, Dois Irmãos<br>Recife — PE, 52171-900, Brasil",
@@ -154,7 +154,7 @@ const UI = {
     "positions.title": "Professional appointments",
 
     "contact.title": "Contact",
-    "contact.body": "I am looking for <strong>research partnerships</strong> and for <strong>postdoctoral</strong> or <strong>visiting professor</strong> opportunities with groups working on computer vision, artificial intelligence in education, or accessibility. A sabbatical year is among the possibilities.<br><br>I also welcome invitations for co-supervision, thesis committees, and projects with companies and public bodies.",
+    "contact.body": "I am looking for <strong>research partnerships</strong> and for <strong>postdoctoral</strong> or <strong>visiting professor</strong> opportunities with groups working on computer vision, artificial intelligence in education, or accessibility. A sabbatical year is among the possibilities.<br><br>I also welcome invitations for partnerships, thesis committees, and projects with companies and public bodies.",
     "contact.emailLabel": "Email",
     "contact.addressLabel": "Address",
     "contact.address": "Department of Computing — UFRPE<br>Rua Dom Manuel de Medeiros, s/n, Dois Irmãos<br>Recife — PE, 52171-900, Brazil",
