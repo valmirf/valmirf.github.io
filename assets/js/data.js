@@ -41,13 +41,13 @@ const SITE = {
     pt: [
       'Sou professor associado do Departamento de Computação da <a href="https://www.ufrpe.br" target="_blank" rel="noopener">UFRPE</a>, onde leciono desde 2013, e um dos líderes do <a href="https://dc.ufrpe.br/node/14" target="_blank" rel="noopener">VCL — Visual Computing Lab</a>. Também sou membro do <a href="https://aiboxlab.org" target="_blank" rel="noopener">AIBox Lab</a>, laboratório de inteligência artificial do mesmo departamento, e membro pesquisador do <a href="https://www.nees.ufal.br" target="_blank" rel="noopener">NEES</a>, na UFAL. Fiz doutorado no <a href="https://www2.cin.ufpe.br" target="_blank" rel="noopener">CIn/UFPE</a>, orientado por Francisco de Assis Tenório de Carvalho, onde desenvolvi algoritmos de agrupamento semissupervisionado com ponderação automática de variáveis.',
       "Hoje trabalho principalmente em visão computacional e em inteligência artificial aplicada à educação e à acessibilidade. Meus projetos costumam partir da mesma situação: um problema com consequência prática — segurança de banhistas, avaliação de matemática no ensino fundamental, comunicação de quem não fala — e poucos recursos, de máquina e de dados. Essa restrição decide o método: leva a modelos compactos, a técnicas de ajuste fino que os tornam competitivos, e a tratar custo computacional como objetivo de otimização, e não como consequência.",
-      "Boa parte desses projetos deixa também uma base de dados anotada: imagens de praia, cromossomos em metáfase, equações manuscritas de alunos, redações escolares, pictogramas de comunicação aumentativa. Montar e anotar o conjunto foi parte do trabalho em cada um — e no caso da comunicação aumentativa em português, não existia nenhum conjunto público antes. O do <a href='https://doi.org/10.5281/zenodo.4041488' target='_blank' rel='noopener'>MyFood</a> está aberto no Zenodo.",
+      "Boa parte desses projetos deixa também uma base de dados anotada: imagens de praia, cromossomos em metáfase, equações manuscritas de alunos, redações escolares, pictogramas de comunicação alternativa e ampliada. Montar e anotar o conjunto foi parte do trabalho em cada um — e no caso da comunicação alternativa e ampliada em português, não existia nenhum conjunto público antes. Três já estão abertos: <a href='https://doi.org/10.5281/zenodo.4041488' target='_blank' rel='noopener'>MyFood</a> e <a href='https://doi.org/10.5281/zenodo.15611389' target='_blank' rel='noopener'>Chromo-CRCN</a> no Zenodo, e o de <a href='https://www.kaggle.com/datasets/aibox-lab/portuguese-narrative-essays' target='_blank' rel='noopener'>redações</a> no Kaggle.",
       'Meus trabalhos aparecem em <em>Applied Soft Computing</em>, <em>Expert Systems with Applications</em>, <em>Machine Vision and Applications</em> e no <em>International Journal of Artificial Intelligence in Education</em>, além de IJCNN, BRACIS, SIBGRAPI, ICTAI e AIED. Recebi o prêmio de <strong>Melhor Artigo</strong> da trilha de IA na Educação do SBIE 2023. A linha de IA é financiada pelo <strong>Ministério da Educação</strong> e pela <strong>FINEP</strong>, e foi selecionada pela <strong>Fundação Itaú</strong> entre 26 iniciativas do edital nacional de Inteligência Artificial para Educação, com coautoria na Harvard Graduate School of Education e na University of Pennsylvania.',
     ],
     en: [
       'I am an Associate Professor in the Department of Computing at <a href="https://www.ufrpe.br" target="_blank" rel="noopener">UFRPE</a>, where I have taught since 2013, and one of the leaders of <a href="https://dc.ufrpe.br/node/14" target="_blank" rel="noopener">VCL — Visual Computing Lab</a>. I am also a member of <a href="https://aiboxlab.org" target="_blank" rel="noopener">AIBox Lab</a>, the artificial intelligence laboratory of the same department, and a research member of <a href="https://www.nees.ufal.br" target="_blank" rel="noopener">NEES</a>, at UFAL. I did my PhD at <a href="https://www2.cin.ufpe.br" target="_blank" rel="noopener">CIn/UFPE</a>, advised by Francisco de Assis Tenório de Carvalho, where I developed semi-supervised clustering algorithms with automatic variable weighting.',
       "I work mainly on computer vision and on artificial intelligence for education and accessibility. My projects tend to start from the same situation: a problem with practical consequence — bather safety, elementary mathematics assessment, communication for people who do not speak — and scarce resources, in both hardware and data. That constraint decides the method: it leads to compact models, to fine-tuning techniques that make them competitive, and to treating computational cost as an optimisation objective rather than a consequence.",
-      "Most of these projects also leave an annotated dataset behind: beach imagery, metaphase chromosomes, students' handwritten equations, school essays, augmentative communication pictograms. Building and annotating the set was part of the work in each case — and for augmentative communication in Portuguese, no public dataset existed at all. The <a href='https://doi.org/10.5281/zenodo.4041488' target='_blank' rel='noopener'>MyFood</a> one is open on Zenodo.",
+      "Most of these projects also leave an annotated dataset behind: beach imagery, metaphase chromosomes, students' handwritten equations, school essays, augmentative and alternative communication pictograms. Building and annotating the set was part of the work in each case — and for augmentative and alternative communication in Portuguese, no public dataset existed at all. Three are already open: <a href='https://doi.org/10.5281/zenodo.4041488' target='_blank' rel='noopener'>MyFood</a> and <a href='https://doi.org/10.5281/zenodo.15611389' target='_blank' rel='noopener'>Chromo-CRCN</a> on Zenodo, and the <a href='https://www.kaggle.com/datasets/aibox-lab/portuguese-narrative-essays' target='_blank' rel='noopener'>essay</a> corpus on Kaggle.",
       'My work appears in <em>Applied Soft Computing</em>, <em>Expert Systems with Applications</em>, <em>Machine Vision and Applications</em>, and the <em>International Journal of Artificial Intelligence in Education</em>, as well as IJCNN, BRACIS, SIBGRAPI, ICTAI, and AIED. I received the <strong>Best Paper Award</strong> in the AI in Education track of SBIE 2023. The AI line is funded by the <strong>Brazilian Ministry of Education</strong> and by <strong>FINEP</strong>, and was selected by the <strong>Itaú Foundation</strong> among 26 initiatives in its national Artificial Intelligence for Education call, with co-authorship at the Harvard Graduate School of Education and the University of Pennsylvania.',
     ],
   },
@@ -58,7 +58,7 @@ const SITE = {
       "Meu ponto de partida foi teórico: algoritmos particionais que incorporam supervisão parcial na própria função objetivo e aprendem, durante a otimização, o peso de cada variável em cada grupo. Essa ideia — deixar o modelo descobrir o que é relevante em vez de fixá-lo a priori — é o fio que liga tudo o que fiz depois.",
       "Em <strong>visão computacional</strong>, isso virou segmentação e detecção em cenários que quebram os métodos padrão: banhistas parcialmente submersos em imagens de praia, cromossomos em metáfase para dosimetria biológica, alimentos em pratos, gestos de mão em tempo real.",
       "Em <strong>IA na Educação</strong>, trabalho com o que a área chama de <strong>IA desplugada</strong>: sistemas tutores que operam sem internet e sem um dispositivo por aluno. A ideia inverte a premissa da tecnologia educacional, que quase sempre pressupõe conexão e um aparelho por criança — condição que a escola pública brasileira raramente tem. O professor passa a ser a interface: fotografa a atividade resolvida no papel, o modelo roda no próprio celular e devolve a correção. O orçamento computacional deixa de ser detalhe de engenharia e vira condição de alcance.",
-      "Em <strong>linguagem natural</strong>, modelos para o português aplicados à avaliação de textos escolares. E em <strong>acessibilidade</strong>, comunicação aumentativa e alternativa — pictogramas e modelos compactos para quem não se comunica pela fala, num idioma que até então não tinha corpus público para isso.",
+      "Em <strong>linguagem natural</strong>, modelos para o português aplicados à avaliação de textos escolares. E em <strong>acessibilidade</strong>, comunicação alternativa e ampliada — pictogramas e modelos compactos para quem não se comunica pela fala, num idioma que até então não tinha corpus público para isso.",
     ],
     en: [
       "My starting point was theoretical: partitional algorithms that embed partial supervision in the objective function itself and learn, during optimization, the weight of each variable within each cluster. That idea — letting the model discover what matters instead of fixing it a priori — is the thread running through everything since.",
@@ -179,8 +179,9 @@ const SITE = {
     {
       id: "cromossomos",
       dataset: {
-        pt: "74 metáfases do banco do CRCN-NE, das quais foram anotadas 2.174 regiões de cromossomo.",
-        en: "74 metaphases from the CRCN-NE archive, from which 2,174 chromosome regions were annotated.",
+        url: "https://doi.org/10.5281/zenodo.15611389",
+        pt: "<strong>Chromo-CRCN</strong>: 519 imagens de células em metáfase, com os cromossomos anotados em formato YOLO. Construída na parceria entre o CRCN-NE e a UFRPE e publicada no Zenodo sob CC-BY. A mesma parceria abriu o <a href='https://doi.org/10.5281/zenodo.14947933' target='_blank' rel='noopener'>CRCN-NE Micronucleus</a>, com 889 imagens de linfócitos binucleados.",
+        en: "<strong>Chromo-CRCN</strong>: 519 images of cells in metaphase, with chromosomes annotated in YOLO format. Built in the CRCN-NE–UFRPE partnership and published on Zenodo under CC-BY. The same partnership released <a href='https://doi.org/10.5281/zenodo.14947933' target='_blank' rel='noopener'>CRCN-NE Micronucleus</a>, with 889 images of binucleated lymphocytes.",
       },
       from: 2017,
       to: 2020,
@@ -222,8 +223,9 @@ const SITE = {
     {
       id: "nlp-pt",
       dataset: {
-        pt: "Redações escolares em português, anotadas para pontuação, coerência temática e nota.",
-        en: "School essays in Portuguese, annotated for punctuation, thematic coherence, and score.",
+        url: "https://www.kaggle.com/datasets/aibox-lab/portuguese-narrative-essays",
+        pt: "<strong>Brazilian Portuguese Narrative Essays</strong>: 1.235 redações manuscritas de alunos de escola pública, transcritas, anonimizadas e avaliadas por três especialistas segundo uma rubrica de quatro competências. É o primeiro conjunto de redações do ensino fundamental em português para avaliação automática. Publicada pelo AIBox Lab no Kaggle sob CC BY-NC-SA, foi a base da competição do PROPOR 2024 e está documentada em <em>Data in Brief</em> (<a href='https://doi.org/10.1016/j.dib.2025.111526' target='_blank' rel='noopener'>2025</a>).",
+        en: "<strong>Brazilian Portuguese Narrative Essays</strong>: 1,235 handwritten essays by public-school students, transcribed, anonymised, and graded by three specialists against a four-competency rubric. It is the first elementary-school essay corpus in Portuguese for automated assessment. Published by AIBox Lab on Kaggle under CC BY-NC-SA, it was the basis for the PROPOR 2024 shared task and is documented in <em>Data in Brief</em> (<a href='https://doi.org/10.1016/j.dib.2025.111526' target='_blank' rel='noopener'>2025</a>).",
       },
       from: 2021,
       to: null,
@@ -245,25 +247,25 @@ const SITE = {
     {
       id: "aac",
       dataset: {
-        pt: "Corpus de comunicação aumentativa e alternativa em português, construído a partir do acervo aberto do ARASAAC — não existia nenhum conjunto público antes. Em construção.",
+        pt: "Corpus de comunicação alternativa e ampliada em português, construído a partir do acervo aberto do ARASAAC — não existia nenhum conjunto público antes. Em construção.",
         en: "A corpus of augmentative and alternative communication in Portuguese, built from the open ARASAAC collection — no public dataset existed before. Under construction.",
       },
       from: 2025,
       to: null,
       featured: true,
       blurb: {
-        pt: "Modelos de linguagem e pictogramas para comunicação aumentativa e alternativa em português — a língua para a qual não existia corpus público.",
+        pt: "Modelos de linguagem e pictogramas para comunicação alternativa e ampliada em português — a língua para a qual não existia corpus público.",
         en: "Language models and pictograms for augmentative and alternative communication in Portuguese — the language that had no public corpus.",
       },
       periodLabel: { pt: "2025 — atual", en: "2025 — present" },
       status: "active",
       title: {
-        pt: "Janda.IA — Comunicação Aumentativa e Alternativa",
+        pt: "Janda.IA — Comunicação Alternativa e Ampliada",
         en: "Janda.IA — Augmentative and Alternative Communication",
       },
       role: { pt: "Projeto FINEP · UFRPE e Livox", en: "FINEP project · UFRPE and Livox" },
       desc: {
-        pt: "Comunicação aumentativa e alternativa é o conjunto de recursos que permite alguém se expressar quando a fala não está disponível — pranchas de pictogramas, seleção assistida, construção de sentenças. O levantamento que abriu o projeto chegou a um resultado que define o resto do trabalho: <strong>não existe corpus público de CAA em português brasileiro</strong>. Tudo o que havia era em inglês, ou fechado. Sem base, não há modelo — então a primeira frente foi construir a base, a partir do acervo aberto de pictogramas do <a href=\"https://arasaac.org\" target=\"_blank\" rel=\"noopener\">ARASAAC</a>.",
+        pt: "Comunicação alternativa e ampliada é o conjunto de recursos que permite alguém se expressar quando a fala não está disponível — pranchas de pictogramas, seleção assistida, construção de sentenças. O levantamento que abriu o projeto chegou a um resultado que define o resto do trabalho: <strong>não existe corpus público de CAA em português brasileiro</strong>. Tudo o que havia era em inglês, ou fechado. Sem base, não há modelo — então a primeira frente foi construir a base, a partir do acervo aberto de pictogramas do <a href=\"https://arasaac.org\" target=\"_blank\" rel=\"noopener\">ARASAAC</a>.",
         en: "Augmentative and alternative communication is the set of resources that lets someone express themselves when speech is unavailable — pictogram boards, assisted selection, sentence construction. The survey that opened the project reached a result that defines everything after it: <strong>no public AAC corpus exists in Brazilian Portuguese</strong>. What existed was in English, or closed. No corpus, no model — so the first front was building the corpus, from the open pictogram collection of <a href=\"https://arasaac.org\" target=\"_blank\" rel=\"noopener\">ARASAAC</a>.",
       },
       contributions: {
