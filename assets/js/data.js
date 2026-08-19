@@ -409,8 +409,8 @@ const SITE = {
         note: { pt: "Publicado em <em>Applied Soft Computing</em>; hoje pesquisador em aprendizado de máquina.", en: "Published in <em>Applied Soft Computing</em>; now a machine learning researcher." } },
     ],
     note: {
-      pt: "Além dessas, orientei 13 trabalhos de conclusão de curso e 4 projetos de iniciação científica em Ciência da Computação na UFRPE.",
-      en: "In addition, I have supervised 13 undergraduate final projects and 4 research fellowships in Computer Science at UFRPE.",
+      pt: "Além dessas, orientei dezenas de trabalhos de conclusão de curso e vários projetos de iniciação científica em Ciência da Computação na UFRPE.",
+      en: "In addition, I have supervised dozens of undergraduate final projects and several research fellowships in Computer Science at UFRPE.",
     },
   },
 
