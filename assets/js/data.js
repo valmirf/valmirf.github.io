@@ -380,7 +380,6 @@ const SITE = {
          mas é o título que dá substância à lista. */
       { name: "Katisshaline Fazane dos Santos", since: "2026.1", level: { pt: "Mestrado", en: "Master's" } },
       { name: "Lucas Nascimento Tavora", since: "2026.1", level: { pt: "Mestrado", en: "Master's" } },
-      { name: "Wellington Luis da Cunha", since: "2026.2", level: { pt: "Graduação", en: "Undergraduate" } },
       { name: "Lucas Matheus do N. Alves", since: "2026.1", level: { pt: "Graduação", en: "Undergraduate" } },
     ],
     alumni: [
