@@ -279,6 +279,80 @@
     `),
   };
 
+  /* =============================================================
+     Figura de assinatura da home. Um recorte de manuscrito sendo lido:
+     papel pautado, traço à mão, caixas de detecção. É o eixo do trabalho —
+     antes de avaliar a redação ou a conta, é preciso ler o que está escrito.
+     Fica no lugar do retrato enquanto não houver foto; a foto, quando
+     carregar, cobre a figura.
+     ============================================================= */
+  /* Retrato: só é pedido quando existe. Sem isso, toda visita gera um 404. */
+  const PHOTO = SITE.person.photo || "";
+
+  const svgP = (inner) =>
+    `<svg viewBox="0 0 300 400" role="img" aria-hidden="true" preserveAspectRatio="xMidYMid slice">${inner}</svg>`;
+
+  const HERO_FIG = (() => {
+    const BASE = [110, 180, 250, 320];
+    const SLANT = 9, TAN = Math.tan((SLANT * Math.PI) / 180);
+
+    /* Uma palavra é um traço contínuo de bojos de altura variável, com uma
+       haste alta e, às vezes, uma descendente abaixo da pauta. A sequência é
+       determinística: o desenho não muda entre visitas. */
+    const word = (x, y, w, seed) => {
+      let r = (seed * 7919) % 251, cx = x, d = `M${x} ${y}`;
+      const next = () => ((r = (r * 37 + 17) % 251) / 251);
+      let alto = false;
+      while (cx < x + w - 6) {
+        const n = next(), resta = x + w - cx;
+        if (!alto && n < 0.3 && resta > 14) {          // haste: sobe bem acima da linha
+          d += ` q2 -32 6 -28 q3 4 3 28`; cx += 9; alto = true;
+        } else if (n > 0.86 && resta > 16) {           // descendente com laçada
+          d += ` q7 -14 12 0 q5 16 -1 21 q-6 2 -6 -6`; cx += 12;
+        } else if (n > 0.42) {                          // bojo de altura de x
+          const h = 14 + Math.round(n * 6);
+          d += ` q6 ${-h} 12 0`; cx += 12;
+        } else {                                        // ligação baixa e curta
+          d += ` q4 -9 8 0`; cx += 8;
+        }
+      }
+      return `<path d="${d}" fill="none" stroke="${I}" stroke-width="3.2"
+                stroke-linecap="round" stroke-linejoin="round" opacity=".82"/>`;
+    };
+
+    /* A escrita é inclinada; as caixas de detecção não. É essa diferença que
+       mostra que uma coisa foi escrita à mão e a outra foi medida. */
+    const linha = (y, palavras) =>
+      `<g transform="translate(${(TAN * y).toFixed(1)} 0) skewX(-${SLANT})">` +
+      palavras.map(([x, w], k) => word(x, y, w, y + k * 13)).join("") + `</g>`;
+
+    const LINHAS = [
+      [[58, 62], [132, 40], [182, 78]],
+      [[58, 54], [124, 68], [204, 56]],
+      [[58, 74], [144, 46], [200, 60]],
+      [[58, 88], [158, 52]],
+    ];
+
+    const pauta = BASE.map((y) =>
+      `<path d="M26 ${y}h250" stroke="${G}" stroke-width="1.6" opacity=".6"/>`).join("");
+
+    /* Segunda linha: duas propostas em tracejado e uma leitura confirmada. */
+    const caixas = LINHAS[1].map(([x, w], i) => {
+      const on = i === 1, y = BASE[1] - 42, h = 58, bx = x - 8;
+      return `<rect x="${bx}" y="${y}" width="${w + 18}" height="${h}" fill="none"
+                stroke="${on ? A : G}" stroke-width="${on ? 3.2 : 2}"
+                ${on ? "" : 'stroke-dasharray="6 5"'}/>` +
+        (on ? `<rect x="${bx}" y="${y - 14}" width="30" height="14" fill="${A}"/>` : "");
+    }).join("");
+
+    return svgP(`
+      <path d="M44 24V376" stroke="${G}" stroke-width="1.6" opacity=".9"/>
+      ${pauta}
+      ${LINHAS.map((ws, r) => linha(BASE[r], ws)).join("")}
+      ${caixas}
+    `);
+  })();
+
   const FIG_FOR = {
     mathaide: "equation", banhistas: "detect", myfood: "plate",
     cromossomos: "chromo", gestos: "hands", "nlp-pt": "text", clustering: "cluster", aac: "board",
@@ -457,7 +531,7 @@
     <article class="row">
       <a class="fig" href="${url("projetos/" + p.id + "/")}" aria-label="${L(p.title)}">${projFigure(p)}</a>
       <div>
-        <h3 class="row__t"><a href="${url("projetos/" + p.id + "/")}">${L(p.title)}</a></h3>
+        <h2 class="row__t"><a href="${url("projetos/" + p.id + "/")}">${L(p.title)}</a></h2>
         <p class="row__meta">${L(p.periodLabel)}<span class="dot">·</span>${L(p.role)}</p>
         <p class="row__desc">${L(p.blurb)}</p>
         <p class="row__more"><a href="${url("projetos/" + p.id + "/")}">${t("projects.open")} →</a></p>
@@ -487,11 +561,9 @@
               <a class="stage__alt" href="${url("perfil.html")}">${t("home.toProfile")}</a>
             </p>
           </div>
-          <figure class="portrait portrait--wide is-empty">
-            <img src="${url("assets/img/valmir.jpg")}" alt="Prof. Valmir Macario"
-                 onload="this.closest('.portrait').classList.remove('is-empty')"
-                 onerror="this.closest('.portrait').classList.add('is-empty')">
-            <span class="portrait__initials" aria-hidden="true">VM</span>
+          <figure class="portrait portrait--wide${PHOTO ? "" : " is-empty"}">
+            ${PHOTO ? `<img src="${url(PHOTO)}" alt="Prof. Valmir Macario">` : ""}
+            <span class="portrait__fig">${HERO_FIG}</span>
           </figure>
         </div>
       </section>
@@ -518,10 +590,8 @@
             <p class="ident__note">${L(SITE.metrics.line)}</p>
           </div>
           <div class="ident__photo">
-            <figure class="portrait is-empty">
-              <img src="${url("assets/img/valmir.jpg")}" alt="Valmir Macario Filho"
-                   onload="this.closest('.portrait').classList.remove('is-empty')"
-                 onerror="this.closest('.portrait').classList.add('is-empty')">
+            <figure class="portrait${PHOTO ? "" : " is-empty"}">
+              ${PHOTO ? `<img src="${url(PHOTO)}" alt="Valmir Macario Filho">` : ""}
               <span class="portrait__initials" aria-hidden="true">VM</span>
             </figure>
           </div>
@@ -666,7 +736,12 @@
       </section>`).join("");
 
     $$("#pubFilters .tab").forEach((b) => b.addEventListener("click", () => {
-      pubFilter = b.dataset.kf; renderPubs(); reveal();
+      pubFilter = b.dataset.kf;
+      /* O endereço acompanha o filtro: a lista recortada é compartilhável,
+         e a página já sabia ler o mesmo fragmento ao abrir. */
+      const frag = pubFilter === "all" ? " " : "#" + pubFilter;
+      history.replaceState(null, "", location.pathname + (frag.trim() ? frag : ""));
+      renderPubs(); reveal();
     }));
   }
 

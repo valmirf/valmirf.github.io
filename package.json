@@ -1,0 +1,11 @@
+{
+  "name": "site-valmir-macario",
+  "private": true,
+  "description": "Verificação do site. O site em si não tem build: é HTML, CSS e JS servidos direto.",
+  "scripts": {
+    "test": "playwright test"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.62.1"
+  }
+}

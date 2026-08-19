@@ -5,3 +5,10 @@ PRODUCT.md
 
 # Sistema
 .DS_Store
+
+# Verificação (não faz parte do site publicado)
+node_modules/
+package-lock.json
+test-results/
+playwright-report/
+tests/__screens__/

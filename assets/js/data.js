@@ -7,6 +7,9 @@
 const SITE = {
   /* ---------- Identidade ---------- */
   person: {
+    /* Caminho da foto, ex.: "assets/img/valmir.jpg". Vazio = sem foto,
+       e aí nenhum pedido de imagem é feito. */
+    photo: "",
     name: "Valmir Macario Filho",
     shortName: "Valmir Macario",
     role: {
