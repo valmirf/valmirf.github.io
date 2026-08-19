@@ -594,6 +594,13 @@
     if (!p) return `<section class="block"><div class="wrap"><p>${t("projects.missing")}</p></div></section>`;
 
     const related = SITE.publications.filter((x) => x.proj === p.id);
+    const base = p.dataset ? `
+      <aside class="dataset">
+        <p class="dataset__t">${t("projects.dataset")}</p>
+        <p class="dataset__d">${L(p.dataset)}</p>
+        ${p.dataset.url ? `<p class="dataset__a"><a href="${p.dataset.url}" target="_blank" rel="noopener">${t("projects.datasetOpen")} →</a></p>` : ""}
+      </aside>` : "";
+
     const contribs = p.contributions ? `
       <h2 class="h3 h3--flush">${t("projects.contributions")}</h2>
       <ul class="bullets">${p.contributions[lang].map((c) => `<li>${c}</li>`).join("")}</ul>` : "";
@@ -611,6 +618,7 @@
               <p class="projhead__m">${L(p.periodLabel)}<span class="dot">·</span><span class="st--${p.status}">${t("projects.status." + p.status)}</span><span class="dot">·</span>${L(p.role)}</p>
               <div class="prose prose--lead">${L(p.desc)}</div>
               <div class="tags">${(p.tags || []).map((x) => `<span class="tag">${x}</span>`).join("")}</div>
+              ${base}
             </div>
             <figure class="projhead__fig fig">${projFigure(p)}</figure>
           </div>

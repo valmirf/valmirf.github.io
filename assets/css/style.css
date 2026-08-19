@@ -336,6 +336,21 @@ html { caret-color: var(--link); scrollbar-color: var(--line-2) transparent; scr
 .tag { font-family: var(--f-sans); font-size: .72rem; padding: .22rem .55rem;
   border: 1px solid var(--line); border-radius: 3px; color: var(--ink-3); }
 
+/* ---------- Base de dados do projeto ---------- */
+.dataset {
+  margin: 1.6rem 0 0; padding: 1rem 1.2rem;
+  border: 1px solid color-mix(in srgb, var(--link) 30%, var(--line));
+  border-radius: 4px; background: color-mix(in srgb, var(--link) 5%, transparent);
+  max-width: var(--prose);
+}
+.dataset__t {
+  font-family: var(--f-sans); font-size: .71rem; font-weight: 700;
+  letter-spacing: .13em; text-transform: uppercase; color: var(--link);
+  margin: 0 0 .45rem;
+}
+.dataset__d { font-size: .95rem; color: var(--ink-2); margin: 0; }
+.dataset__a { font-family: var(--f-sans); font-size: .84rem; font-weight: 600; margin: .6rem 0 0; }
+
 /* ---------- Listas ---------- */
 .topics { display: flex; flex-wrap: wrap; gap: .5rem 1.6rem; font-family: var(--f-sans); font-size: .92rem; }
 .chipnum { color: var(--num); font-size: .8rem; }

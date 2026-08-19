@@ -40,12 +40,14 @@ const SITE = {
   about: {
     pt: [
       'Sou professor associado do Departamento de Computação da <a href="https://www.ufrpe.br" target="_blank" rel="noopener">UFRPE</a>, onde leciono desde 2013, e um dos líderes do <a href="https://dc.ufrpe.br/node/14" target="_blank" rel="noopener">VCL — Visual Computing Lab</a>. Também sou membro do <a href="https://aiboxlab.org" target="_blank" rel="noopener">AIBox Lab</a>, laboratório de inteligência artificial do mesmo departamento, e membro pesquisador do <a href="https://www.nees.ufal.br" target="_blank" rel="noopener">NEES</a>, na UFAL. Fiz doutorado no <a href="https://www2.cin.ufpe.br" target="_blank" rel="noopener">CIn/UFPE</a>, orientado por Francisco de Assis Tenório de Carvalho, onde desenvolvi algoritmos de agrupamento semissupervisionado com ponderação automática de variáveis.',
-      "Hoje trabalho principalmente em visão computacional e em inteligência artificial aplicada à educação e à acessibilidade. Meus projetos costumam partir da mesma situação: um problema com consequência prática — segurança de banhistas, avaliação de matemática no ensino fundamental, comunicação de quem não fala — e pouca margem computacional, porque o equipamento disponível é o celular do professor ou o computador da escola.",
+      "Hoje trabalho principalmente em visão computacional e em inteligência artificial aplicada à educação e à acessibilidade. Meus projetos costumam partir da mesma situação: um problema com consequência prática — segurança de banhistas, avaliação de matemática no ensino fundamental, comunicação de quem não fala — e poucos recursos, de máquina e de dados. Essa restrição decide o método: leva a modelos compactos, a técnicas de ajuste fino que os tornam competitivos, e a tratar custo computacional como objetivo de otimização, e não como consequência.",
+      "Boa parte desses projetos deixa também uma base de dados anotada: imagens de praia, cromossomos em metáfase, equações manuscritas de alunos, redações escolares, pictogramas de comunicação aumentativa. Montar e anotar o conjunto foi parte do trabalho em cada um — e no caso da comunicação aumentativa em português, não existia nenhum conjunto público antes. O do <a href='https://doi.org/10.5281/zenodo.4041488' target='_blank' rel='noopener'>MyFood</a> está aberto no Zenodo.",
       'Meus trabalhos aparecem em <em>Applied Soft Computing</em>, <em>Expert Systems with Applications</em>, <em>Machine Vision and Applications</em> e no <em>International Journal of Artificial Intelligence in Education</em>, além de IJCNN, BRACIS, SIBGRAPI, ICTAI e AIED. Recebi o prêmio de <strong>Melhor Artigo</strong> da trilha de IA na Educação do SBIE 2023. A linha de IA é financiada pelo <strong>Ministério da Educação</strong> e pela <strong>FINEP</strong>, e foi selecionada pela <strong>Fundação Itaú</strong> entre 26 iniciativas do edital nacional de Inteligência Artificial para Educação, com coautoria na Harvard Graduate School of Education e na University of Pennsylvania.',
     ],
     en: [
       'I am an Associate Professor in the Department of Computing at <a href="https://www.ufrpe.br" target="_blank" rel="noopener">UFRPE</a>, where I have taught since 2013, and one of the leaders of <a href="https://dc.ufrpe.br/node/14" target="_blank" rel="noopener">VCL — Visual Computing Lab</a>. I am also a member of <a href="https://aiboxlab.org" target="_blank" rel="noopener">AIBox Lab</a>, the artificial intelligence laboratory of the same department, and a research member of <a href="https://www.nees.ufal.br" target="_blank" rel="noopener">NEES</a>, at UFAL. I did my PhD at <a href="https://www2.cin.ufpe.br" target="_blank" rel="noopener">CIn/UFPE</a>, advised by Francisco de Assis Tenório de Carvalho, where I developed semi-supervised clustering algorithms with automatic variable weighting.',
-      "I work mainly on computer vision and on artificial intelligence for education and accessibility. My projects tend to start from the same situation: a problem with practical consequence — bather safety, elementary mathematics assessment, communication for people who do not speak — and little computational headroom, because the available hardware is the teacher's phone or the school's computer.",
+      "I work mainly on computer vision and on artificial intelligence for education and accessibility. My projects tend to start from the same situation: a problem with practical consequence — bather safety, elementary mathematics assessment, communication for people who do not speak — and scarce resources, in both hardware and data. That constraint decides the method: it leads to compact models, to fine-tuning techniques that make them competitive, and to treating computational cost as an optimisation objective rather than a consequence.",
+      "Most of these projects also leave an annotated dataset behind: beach imagery, metaphase chromosomes, students' handwritten equations, school essays, augmentative communication pictograms. Building and annotating the set was part of the work in each case — and for augmentative communication in Portuguese, no public dataset existed at all. The <a href='https://doi.org/10.5281/zenodo.4041488' target='_blank' rel='noopener'>MyFood</a> one is open on Zenodo.",
       'My work appears in <em>Applied Soft Computing</em>, <em>Expert Systems with Applications</em>, <em>Machine Vision and Applications</em>, and the <em>International Journal of Artificial Intelligence in Education</em>, as well as IJCNN, BRACIS, SIBGRAPI, ICTAI, and AIED. I received the <strong>Best Paper Award</strong> in the AI in Education track of SBIE 2023. The AI line is funded by the <strong>Brazilian Ministry of Education</strong> and by <strong>FINEP</strong>, and was selected by the <strong>Itaú Foundation</strong> among 26 initiatives in its national Artificial Intelligence for Education call, with co-authorship at the Harvard Graduate School of Education and the University of Pennsylvania.',
     ],
   },
@@ -70,6 +72,10 @@ const SITE = {
   projects: [
     {
       id: "mathaide",
+      dataset: {
+        pt: "Expressões matemáticas manuscritas por alunos do ensino fundamental, fotografadas em sala e anotadas para detecção e reconhecimento.",
+        en: "Mathematical expressions handwritten by elementary-school students, photographed in class and annotated for detection and recognition.",
+      },
       from: 2022,
       to: null,
       blurb: { pt: "Tutor inteligente de matemática que roda sem internet, em celular barato: o professor fotografa a atividade e o sistema lê a equação manuscrita e classifica o erro.", en: "An intelligent mathematics tutor that runs offline on a low-cost phone: the teacher photographs the work and the system reads the handwritten equation and classifies the error." },
@@ -108,6 +114,10 @@ const SITE = {
     },
     {
       id: "banhistas",
+      dataset: {
+        pt: "Imagens da orla do Recife anotadas com a posição dos banhistas, incluindo o conjunto de segmentação semântica usado no ENIAC 2021.",
+        en: "Recife shoreline imagery annotated with bather positions, including the semantic segmentation set used at ENIAC 2021.",
+      },
       from: 2015,
       to: 2018,
       blurb: { pt: "Detecção e rastreamento de banhistas nas praias do Recife, onde as pessoas aparecem pequenas, parcialmente submersas e sob luz que muda o tempo todo.", en: "Detecting and tracking bathers on Recife's beaches, where people appear small, partly submerged, and under constantly shifting light." },
@@ -142,6 +152,13 @@ const SITE = {
     },
     {
       id: "myfood",
+      /* Base pública. Para as demais, PREENCHER a url quando houver
+         repositório, ou o texto de disponibilidade que você quiser oferecer. */
+      dataset: {
+        url: "https://doi.org/10.5281/zenodo.4041488",
+        pt: "1.250 imagens de refeições brasileiras em 9 classes, anotadas para segmentação. Publicada no Zenodo sob CC-BY.",
+        en: "1,250 images of Brazilian meals across 9 classes, annotated for segmentation. Published on Zenodo under CC-BY.",
+      },
       from: 2017,
       to: 2020,
       blurb: { pt: "Segmentação e classificação de alimentos em fotos de prato, com um conjunto de dados de refeições brasileiras publicado abertamente.", en: "Food segmentation and classification in plate photographs, with an openly published dataset of Brazilian meals." },
@@ -161,6 +178,10 @@ const SITE = {
     },
     {
       id: "cromossomos",
+      dataset: {
+        pt: "74 metáfases do banco do CRCN-NE, das quais foram anotadas 2.174 regiões de cromossomo.",
+        en: "74 metaphases from the CRCN-NE archive, from which 2,174 chromosome regions were annotated.",
+      },
       from: 2017,
       to: 2020,
       blurb: { pt: "Segmentação automática de cromossomos em metáfase para dosimetria biológica, atacando uma contagem manual que leva de 6 a 8 horas por amostra.", en: "Automatic metaphase chromosome segmentation for biological dosimetry, attacking a manual count that takes 6 to 8 hours per sample." },
@@ -200,6 +221,10 @@ const SITE = {
     },
     {
       id: "nlp-pt",
+      dataset: {
+        pt: "Redações escolares em português, anotadas para pontuação, coerência temática e nota.",
+        en: "School essays in Portuguese, annotated for punctuation, thematic coherence, and score.",
+      },
       from: 2021,
       to: null,
       blurb: { pt: "Ler a redação manuscrita e avaliá-la: reconhecimento de caracteres em texto escolar e modelos de linguagem para o português.", en: "Reading the handwritten essay and assessing it: character recognition in school writing and Portuguese language models." },
@@ -219,6 +244,10 @@ const SITE = {
     },
     {
       id: "aac",
+      dataset: {
+        pt: "Corpus de comunicação aumentativa e alternativa em português, construído a partir do acervo aberto do ARASAAC — não existia nenhum conjunto público antes. Em construção.",
+        en: "A corpus of augmentative and alternative communication in Portuguese, built from the open ARASAAC collection — no public dataset existed before. Under construction.",
+      },
       from: 2025,
       to: null,
       featured: true,

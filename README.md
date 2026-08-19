@@ -86,6 +86,23 @@ img: "assets/img/papers/ictai2017.jpg",
 Proporção 4:3 (ex.: 800×600 px). O slot aceita imagem real sem precisar mudar o
 layout.
 
+### Publicar a base de dados de um projeto
+
+Cada projeto pode declarar a base que produziu. O bloco aparece destacado na
+página do projeto, logo abaixo da descrição:
+
+```js
+dataset: {
+  url: "https://doi.org/10.5281/zenodo.XXXXXXX",  // opcional
+  pt: "O que a base contém, em uma frase.",
+  en: "What the dataset contains, in one sentence.",
+},
+```
+
+Sem `url`, o bloco aparece só com a descrição — que é o estado de cinco das
+seis bases hoje. Quando publicar uma no Zenodo, no Kaggle ou em repositório
+institucional, é só acrescentar a linha.
+
 ### Adicionar um projeto
 
 1. Acrescente o objeto em `SITE.projects` no `data.js`, com `id`, `blurb`,
