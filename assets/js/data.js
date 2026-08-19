@@ -388,7 +388,9 @@ const SITE = {
         topic: { pt: "Otimização multiobjetivo de algoritmos de reconhecimento de equações matemáticas do ensino fundamental", en: "Multi-objective optimization of elementary-school mathematical equation recognition" } },
       /* PREENCHER: título do TCC destes três, que não veio na lista do SIGAA. */
       { name: "Matheus Florentino S. C. G. dos Santos", year: "2026", level: { pt: "Graduação", en: "Undergraduate" } },
-      { name: "Edivaldo Leitão de A. Neto", year: "2026", level: { pt: "Graduação", en: "Undergraduate" } },
+      { name: "Edivaldo Leitão de A. Neto", year: "2026", level: { pt: "Graduação", en: "Undergraduate" },
+        topic: { pt: "Análise de comparação entre modelos de compreensão visual de documentos usando LoRA",
+                 en: "A comparison of document visual understanding models using LoRA" } },
       { name: "Pedro Paulo Barros Interaminense", year: "2025", level: { pt: "Mestrado", en: "Master's" },
         topic: { pt: "Reconhecimento de caracteres manuscritos em dissertações e exercícios em escolas do Brasil", en: "Handwritten character recognition in Brazilian school essays and exercises" } },
       { name: "Lucas Valentim Dias", year: "2025", level: { pt: "Graduação", en: "Undergraduate" } },
