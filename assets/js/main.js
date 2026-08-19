@@ -20,7 +20,10 @@
   let lang = localStorage.getItem(STORE_LANG)
     || ((navigator.language || "pt").toLowerCase().startsWith("pt") ? "pt" : "en");
 
-  const t = (k) => (UI[lang] && UI[lang][k]) || k;
+  /* {n} num rótulo vira a contagem real de publicações — assim o número
+     nunca desencontra da lista. */
+  const t = (k) => ((UI[lang] && UI[lang][k]) || k)
+    .replace("{n}", () => SITE.publications.length);
   const L = (f) => (f && typeof f === "object" && !Array.isArray(f) ? (f[lang] ?? f.pt) : f);
   const url = (p) => ROOT + p;
 

@@ -59,6 +59,10 @@ Em `data.js`, no início da lista `publications`:
 O campo `s` só deve existir quando houver **número verificável** — é o que
 diferencia a lista de um currículo.
 
+A contagem de publicações que aparece na home e nas caixas de navegação é
+calculada: os rótulos no `i18n.js` usam `{n}`, trocado pelo tamanho real da
+lista. Acrescentou uma publicação, o número acompanha sozinho.
+
 Sem `doi`, a linha de links ainda oferece busca no Google Acadêmico pelo título,
 então toda publicação tem para onde levar o leitor.
 
