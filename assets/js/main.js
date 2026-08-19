@@ -659,6 +659,13 @@
 
   function pageStudents() {
     const s = SITE.supervision;
+    /* Mestrado antes da graduação; dentro de cada nível, do mais recente
+       para o mais antigo. Vale para as duas listas. */
+    const nivel = (x) => (/Mestrado|Master/.test(x.level.pt) ? 0 : 1);
+    const ordena = (lista, campo) => lista.slice().sort((a, b) =>
+      nivel(a) - nivel(b) || String(b[campo]).localeCompare(String(a[campo])));
+    const atuais = ordena(s.current, "since");
+    const egressos = ordena(s.alumni, "year");
     const li = (x, when) => `
       <li><span class="people__n">${x.name}</span><span class="people__m">${L(x.level)}${when ? " · " + when : ""}</span>
         ${x.topic ? `<p class="people__t">${L(x.topic)}</p>` : ""}
@@ -668,11 +675,11 @@
         <div class="wrap">
           <h1 class="h2">${t("students.title")}</h1>
           <p class="head__lead">${L(s.intro)}</p>
-          ${s.current.length ? `
+          ${atuais.length ? `
             <h2 class="h3 h3--flush">${t("students.current")}</h2>
-            <ul class="people">${s.current.map((x) => li(x, t("students.since") + " " + x.since)).join("")}</ul>` : ""}
-          <h2 class="h3 ${s.current.length ? "" : "h3--flush"}">${t("students.alumni")}</h2>
-          <ul class="people">${s.alumni.map((x) => li(x, x.year)).join("")}</ul>
+            <ul class="people">${atuais.map((x) => li(x, t("students.since") + " " + x.since)).join("")}</ul>` : ""}
+          <h2 class="h3 ${atuais.length ? "" : "h3--flush"}">${t("students.alumni")}</h2>
+          <ul class="people">${egressos.map((x) => li(x, x.year)).join("")}</ul>
           <p class="note">${L(s.note)}</p>
         </div>
       </section>`;
