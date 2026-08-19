@@ -74,6 +74,7 @@ const SITE = {
   projects: [
     {
       id: "mathaide",
+      pin: 1,
       dataset: {
         pt: "Expressões matemáticas manuscritas por alunos do ensino fundamental, fotografadas em sala e anotadas para detecção e reconhecimento.",
         en: "Mathematical expressions handwritten by elementary-school students, photographed in class and annotated for detection and recognition.",

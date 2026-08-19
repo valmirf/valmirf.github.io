@@ -348,8 +348,10 @@
   const NOW = new Date().getFullYear();
   const span = (p) => (p.to || NOW) - p.from;
   const rank = (p) => (p.dormant ? 2 : p.status === "active" ? 0 : 1);
+  // pin: número menor vem antes; projetos sem pin ficam depois, na ordem de sempre
+  const pin = (p) => (p.pin == null ? Infinity : p.pin);
   const ordered = () => SITE.projects.slice().sort((a, b) =>
-    rank(a) - rank(b) || span(b) - span(a));
+    pin(a) - pin(b) || rank(a) - rank(b) || span(b) - span(a));
 
   /* ---------- Barra e rodapé ---------- */
   function renderChrome() {
