@@ -89,7 +89,7 @@ const SITE = {
       periodLabel: { pt: "2022 — atual", en: "2022 — present" },
       status: "active",
       title: { pt: "MathAIde — Tutor Inteligente Desplugado", en: "MathAIde — Unplugged Intelligent Tutor" },
-      role: { pt: "Pesquisador principal (UFRPE)", en: "Principal investigator (UFRPE)" },
+      role: { pt: "Coordenador principal", en: "Principal investigator" },
       desc: {
         pt: "Sistema tutor inteligente para matemática do ensino fundamental projetado para funcionar <strong>sem internet e em celulares de baixo custo</strong>. O professor fotografa a atividade resolvida à mão; o sistema detecta e reconhece as equações manuscritas, classifica o tipo de erro com base em teoria pedagógica e devolve recomendações. Enfrenta diretamente o problema da exclusão digital em escolas públicas brasileiras.",
         en: "An intelligent tutoring system for elementary mathematics designed to work <strong>without internet on low-cost phones</strong>. Teachers photograph handwritten work; the system detects and recognizes the handwritten equations, classifies the error type on pedagogical grounds, and returns recommendations. It tackles the digital divide in Brazilian public schools head-on.",
@@ -239,7 +239,7 @@ const SITE = {
       periodLabel: { pt: "2021 — atual", en: "2021 — present" },
       status: "active",
       title: { pt: "Avaliação Automática de Redações", en: "Automated Essay Assessment" },
-      role: { pt: "Pesquisador", en: "Researcher" },
+      role: { pt: "Pesquisador · coordenação de Rafael Ferreira Mello", en: "Researcher · coordinated by Rafael Ferreira Mello" },
       desc: {
         pt: "São dois problemas encadeados, e cada um é de uma área. Primeiro é preciso <strong>ler</strong>: a redação chega manuscrita, e <strong>reconhecimento de texto manuscrito</strong> em produção escolar — letra irregular, papel pautado, foto tirada de celular — é visão computacional, não linguística. Só depois vem <strong>avaliar</strong>: restauração e verificação de pontuação com transformers explicáveis, pontuação automática com classificadores por votação e medida de coerência temática. A qualidade da segunda etapa depende inteiramente da primeira.",
         en: "These are two chained problems, one from each field. First the text has to be <strong>read</strong>: the essay arrives handwritten, and <strong>handwritten text recognition</strong> on school work — irregular handwriting, ruled paper, a photo taken on a phone — is computer vision, not linguistics. Only then comes <strong>assessment</strong>: explainable transformer-based punctuation restoration and verification, automated scoring with voting classifiers, and thematic coherence measurement. The quality of the second stage depends entirely on the first.",
@@ -260,8 +260,8 @@ const SITE = {
         ],
       },
       outputs: {
-        pt: "A linha nasceu de um termo de execução descentralizada do <strong>FNDE/Ministério da Educação</strong> — a <em>Plataforma Adaptativa de Avaliação e Diagnóstico Pedagógico de Textos</em>, executada pelo NEES/UFAL com a UFRPE entre 2021 e 2023, no âmbito do programa Brasil na Escola. A ferramenta ficou aberta a qualquer escola pública pela Plataforma Integrada Brasil na Escola. Publicações em <em>Expert Systems with Applications</em> (2024), PROPOR 2024, ENIAC 2023 e SBIE 2023.",
-        en: "The line began with a decentralised execution agreement from the <strong>FNDE / Brazilian Ministry of Education</strong> — the <em>Adaptive Platform for Assessment and Pedagogical Diagnosis of Texts</em>, run by NEES/UFAL with UFRPE between 2021 and 2023, under the Brasil na Escola programme. The tool was open to any public school through the Plataforma Integrada Brasil na Escola. Published in <em>Expert Systems with Applications</em> (2024), PROPOR 2024, ENIAC 2023, and SBIE 2023.",
+        pt: "A linha nasceu de um termo de execução descentralizada do <strong>FNDE/Ministério da Educação</strong> — a <em>Plataforma Adaptativa de Avaliação e Diagnóstico Pedagógico de Textos</em>, coordenada por <strong>Rafael Ferreira Mello</strong> e executada pelo NEES/UFAL com a UFRPE entre 2021 e 2023, no âmbito do programa Brasil na Escola. Participo como pesquisador. A ferramenta ficou aberta a qualquer escola pública pela Plataforma Integrada Brasil na Escola. Publicações em <em>Expert Systems with Applications</em> (2024), PROPOR 2024, ENIAC 2023 e SBIE 2023.",
+        en: "The line began with a decentralised execution agreement from the <strong>FNDE / Brazilian Ministry of Education</strong> — the <em>Adaptive Platform for Assessment and Pedagogical Diagnosis of Texts</em>, coordinated by <strong>Rafael Ferreira Mello</strong> and run by NEES/UFAL with UFRPE between 2021 and 2023, under the Brasil na Escola programme. I take part as a researcher. The tool was open to any public school through the Plataforma Integrada Brasil na Escola. Published in <em>Expert Systems with Applications</em> (2024), PROPOR 2024, ENIAC 2023, and SBIE 2023.",
       },
     },
     {
@@ -283,7 +283,7 @@ const SITE = {
         pt: "Janda.IA — Comunicação Alternativa e Ampliada",
         en: "Janda.IA — Augmentative and Alternative Communication",
       },
-      role: { pt: "Projeto FINEP · UFRPE e Livox", en: "FINEP project · UFRPE and Livox" },
+      role: { pt: "Pesquisador · coordenação de André Câmara", en: "Researcher · coordinated by André Câmara" },
       desc: {
         pt: "Comunicação alternativa e ampliada é o conjunto de recursos que permite alguém se expressar quando a fala não está disponível — pranchas de pictogramas, seleção assistida, construção de sentenças. O levantamento que abriu o projeto chegou a um resultado que define o resto do trabalho: <strong>não existe corpus público de CAA em português brasileiro</strong>. Tudo o que havia era em inglês, ou fechado. Sem base, não há modelo — então a primeira frente foi construir a base, a partir do acervo aberto de pictogramas do <a href=\"https://arasaac.org\" target=\"_blank\" rel=\"noopener\">ARASAAC</a>.",
         en: "Augmentative and alternative communication is the set of resources that lets someone express themselves when speech is unavailable — pictogram boards, assisted selection, sentence construction. The survey that opened the project reached a result that defines everything after it: <strong>no public AAC corpus exists in Brazilian Portuguese</strong>. What existed was in English, or closed. No corpus, no model — so the first front was building the corpus, from the open pictogram collection of <a href=\"https://arasaac.org\" target=\"_blank\" rel=\"noopener\">ARASAAC</a>.",
@@ -303,8 +303,8 @@ const SITE = {
         ],
       },
       outputs: {
-        pt: "Projeto de subvenção econômica da <strong>FINEP</strong>, em parceria entre a UFRPE e a <a href=\"https://livox.com.br\" target=\"_blank\" rel=\"noopener\">Livox</a>.",
-        en: "An economic subvention project funded by <strong>FINEP</strong>, in partnership between UFRPE and <a href=\"https://livox.com.br\" target=\"_blank\" rel=\"noopener\">Livox</a>.",
+        pt: "Projeto de subvenção econômica da <strong>FINEP</strong>, coordenado por <strong>André Câmara</strong>, em parceria entre a UFRPE e a <a href=\"https://livox.com.br\" target=\"_blank\" rel=\"noopener\">Livox</a>. Participo como pesquisador.",
+        en: "An economic subvention project funded by <strong>FINEP</strong>, coordinated by <strong>André Câmara</strong>, in partnership between UFRPE and <a href=\"https://livox.com.br\" target=\"_blank\" rel=\"noopener\">Livox</a>. I take part as a researcher.",
       },
       tags: ["Acessibilidade", "LLM", "Grafo de Conhecimento", "Pictogramas"],
     },
