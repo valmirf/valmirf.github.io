@@ -29,7 +29,7 @@ const UI = {
     "theme.toggle": "Alternar tema",
 
     "home.signature": "Prof. Valmir Macario · UFRPE",
-    "home.thesis": "Inteligência artificial aplicada a problemas com consequência prática.",
+    "home.thesis": "Aplicações sociais da inteligência artificial.",
     "home.support": "Visão computacional e linguagem natural em saúde, educação, segurança e acessibilidade — com modelos pequenos, dimensionados para equipamento simples e pouca infraestrutura.",
     "home.toProjects": "Ver os projetos",
     "home.toProfile": "Sobre mim",
@@ -111,7 +111,7 @@ const UI = {
     "theme.toggle": "Toggle theme",
 
     "home.signature": "Prof. Valmir Macario · UFRPE",
-    "home.thesis": "Applied artificial intelligence, on problems with practical consequence.",
+    "home.thesis": "Societal applications of artificial intelligence.",
     "home.support": "Computer vision and natural language in health, education, safety, and accessibility — with small models, sized for simple equipment and little infrastructure.",
     "home.toProjects": "See the projects",
     "home.toProfile": "About me",
