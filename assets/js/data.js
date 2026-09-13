@@ -439,7 +439,6 @@ const SITE = {
     alumni: [
       { name: "Cicero Pereira de Lima Júnior", year: "2026", level: { pt: "Mestrado", en: "Master's" },
         topic: { pt: "Otimização multiobjetivo de algoritmos de reconhecimento de equações matemáticas do ensino fundamental", en: "Multi-objective optimization of elementary-school mathematical equation recognition" } },
-      /* PREENCHER: título do TCC destes três, que não veio na lista do SIGAA. */
       { name: "Matheus Florentino S. C. G. dos Santos", year: "2026", level: { pt: "Graduação", en: "Undergraduate" },
         topic: { pt: "Avaliação comparativa dos modelos CAN, SAN e SAM no reconhecimento de expressões matemáticas manuscritas",
                  en: "A comparative evaluation of the CAN, SAN, and SAM models for handwritten mathematical expression recognition" } },
@@ -451,6 +450,10 @@ const SITE = {
       { name: "Lucas Valentim Dias", year: "2025", level: { pt: "Graduação", en: "Undergraduate" },
         topic: { pt: "Aplicação de reconhecimento de texto manuscrito (HTR) para a digitalização de redações do ensino médio em português",
                  en: "Applying handwritten text recognition (HTR) to digitise high-school essays in Portuguese" } },
+      { name: "Everton da Silva Souza", year: "2025", level: { pt: "Iniciação científica", en: "Research fellowship" },
+        topic: { pt: "Detecção de equações manuscritas em dispositivos móveis desconectados e de baixo custo",
+                 en: "Handwritten equation detection in disconnected, low-cost mobile devices" },
+        note: { pt: "Publicado no AIED 2024.", en: "Published at AIED 2024." } },
       { name: "Diego Rafael Ferreira de Souza", year: "2024", level: { pt: "Graduação", en: "Undergraduate" },
         topic: { pt: "Análise comparativa de técnicas de aumento de dados no reconhecimento de gestos de mão",
                  en: "Comparative Analysis of Data Augmentation Techniques in Hand Gesture Recognition" } },
