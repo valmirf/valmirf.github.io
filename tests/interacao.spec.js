@@ -26,8 +26,13 @@ test("o filtro por tema recorta a lista de publicações", async ({ page }) => {
   await manuscrito.click();
   await expect(page).toHaveURL(/#ocr$/);
   const recorte = await page.locator(".pub").count();
+  /* A contagem esperada vem dos dados, não de um número fixo: cada artigo
+     novo de manuscrito mudaria o 7 e quebraria o teste sem haver defeito. */
+  const esperado = await page.evaluate(() =>
+    SITE.publications.filter((p) => p.topic === "ocr").length);
 
-  expect(recorte).toBe(7);
+  expect(recorte).toBe(esperado);
+  expect(recorte).toBeGreaterThan(0);
   expect(recorte).toBeLessThan(total);
   await expect(manuscrito).toHaveClass(/is-on/);
 });

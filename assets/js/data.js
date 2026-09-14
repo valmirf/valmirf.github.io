@@ -23,6 +23,7 @@ const SITE = {
       linkedin: "https://www.linkedin.com/in/valmir-macario-filho-83b4027/",
       github: "https://github.com/valmirf",
       scholar: "https://scholar.google.com.br/citations?user=-UpehpcAAAAJ",
+      orcid: "https://orcid.org/0000-0002-7816-5759",
       researchgate: "https://www.researchgate.net/profile/Valmir-Macario",
       vcl: "https://dc.ufrpe.br/node/14",
       aibox: "https://aiboxlab.org",
@@ -112,8 +113,8 @@ const SITE = {
       },
       tags: ["Reconhecimento de manuscrito", "Deep Learning", "LLM", "Edge AI", "AIED"],
       outputs: {
-        pt: "Publicado em IJAIED, IJHCI, <em>Education and Information Technologies</em>, AIED, SIBGRAPI e SBIE. O artigo <em>Teacher-Centered Intelligent Tutoring Systems</em> recebeu o <strong>Prêmio de Melhor Artigo</strong> da trilha de IA na Educação do SBIE 2023. Financiamento do <strong>Ministério da Educação</strong>; o projeto de geração de questões com LLMs leves foi selecionado pela <strong>Fundação Itaú</strong> entre 26 iniciativas do edital nacional de IA para Educação, em 2024.",
-        en: "Published in IJAIED, IJHCI, <em>Education and Information Technologies</em>, AIED, SIBGRAPI, and SBIE. The paper <em>Teacher-Centered Intelligent Tutoring Systems</em> received the <strong>Best Paper Award</strong> in the AI in Education track of SBIE 2023. Funded by the <strong>Brazilian Ministry of Education</strong>; the lightweight-LLM question generation project was selected by the <strong>Itaú Foundation</strong> among 26 initiatives in its national AI for Education call, in 2024.",
+        pt: "Publicado em IJAIED, IJHCI, <em>Education and Information Technologies</em>, AIED, SIBGRAPI e SBIE. O artigo <em>Teacher-Centered Intelligent Tutoring Systems</em> recebeu o <strong>Prêmio de Melhor Artigo</strong> da trilha de IA na Educação do SBIE 2023. Financiamento do <strong>FNDE/Ministério da Educação</strong> (2023–2024), no projeto em que foi desenvolvido o módulo de correção de matemática manuscrita da plataforma do programa Brasil na Escola, e da <strong>Fundação Itaú Social</strong> (2025–2026), que selecionou o projeto de geração de questões com LLMs leves entre 26 iniciativas do edital nacional de IA para Educação.",
+        en: "Published in IJAIED, IJHCI, <em>Education and Information Technologies</em>, AIED, SIBGRAPI, and SBIE. The paper <em>Teacher-Centered Intelligent Tutoring Systems</em> received the <strong>Best Paper Award</strong> in the AI in Education track of SBIE 2023. Funded by the <strong>FNDE / Brazilian Ministry of Education</strong> (2023–2024), in the project that built the handwritten maths correction module for the Brasil na Escola programme's platform, and by the <strong>Itaú Social Foundation</strong> (2025–2026), which selected the lightweight-LLM question generation project among 26 initiatives in its national AI for Education call.",
       },
       collab: {
         pt: "O sistema foi desenhado <em>com</em> professores, não para eles: 14 professoras participaram das sessões de concepção, e a avaliação em sala real acompanhou 3 professores e 49 alunos ao longo de 12 aulas. O trabalho integra o consórcio brasileiro de IA Desplugada, que reúne UFRPE, UFAL/NEES, USP, UFPA e UEM, com coautoria na Harvard Graduate School of Education e na University of Pennsylvania.",
@@ -432,9 +433,14 @@ const SITE = {
       /* Orientação em andamento pode ficar sem `topic`: enquanto o tema não
          está definido, a linha simplesmente não aparece. Acrescente
          topic: { pt: "...", en: "..." } quando o título fechar. */
-      { name: "Katisshaline Fazane dos Santos", since: "2026.1", level: { pt: "Mestrado", en: "Master's" } },
-      { name: "Lucas Nascimento Tavora", since: "2026.1", level: { pt: "Mestrado", en: "Master's" } },
-      { name: "Lucas Matheus do N. Alves", since: "2026.1", level: { pt: "Graduação", en: "Undergraduate" } },
+      { name: "Katisshaline Fazane dos Santos", since: "2026.1", level: { pt: "Mestrado", en: "Master's" },
+        topic: { pt: "Taxonomia de erros em matemática manuscrita no ensino fundamental", en: "A taxonomy of errors in elementary-school handwritten mathematics" } },
+      { name: "Lucas Nascimento Tavora", since: "2026.1", level: { pt: "Mestrado", en: "Master's" },
+        topic: { pt: "Reconhecimento de redações manuscritas escolares em nível de texto", en: "Text-level recognition of handwritten school essays" } },
+      { name: "Nicholas Camargo Silva", since: "2026", level: { pt: "Graduação", en: "Undergraduate" },
+        topic: { pt: "RealMath: reconhecimento de escrita matemática manuscrita infantil em atividades escolares reais", en: "RealMath: recognising children's handwritten mathematics in real school activities" } },
+      { name: "Lucas Matheus do N. Alves", since: "2025", level: { pt: "Graduação", en: "Undergraduate" },
+        topic: { pt: "Processos de binarização de folhas manuscritas para o reconhecimento de redação", en: "Binarisation of handwritten sheets for essay recognition" } },
     ],
     alumni: [
       { name: "Cicero Pereira de Lima Júnior", year: "2026", level: { pt: "Mestrado", en: "Master's" },
@@ -446,7 +452,7 @@ const SITE = {
         topic: { pt: "Análise de comparação entre modelos de compreensão visual de documentos usando LoRA",
                  en: "A comparison of document visual understanding models using LoRA" } },
       { name: "Pedro Paulo Barros Interaminense", year: "2025", level: { pt: "Mestrado", en: "Master's" },
-        topic: { pt: "Reconhecimento de caracteres manuscritos em dissertações e exercícios em escolas do Brasil", en: "Handwritten character recognition in Brazilian school essays and exercises" } },
+        topic: { pt: "Do manuscrito ao digital: reconhecimento óptico de caracteres e pós-processamento ortográfico em escrita estudantil brasileira", en: "From handwriting to digital: optical character recognition and spelling post-processing in Brazilian student writing" } },
       { name: "Lucas Valentim Dias", year: "2025", level: { pt: "Graduação", en: "Undergraduate" },
         topic: { pt: "Aplicação de reconhecimento de texto manuscrito (HTR) para a digitalização de redações do ensino médio em português",
                  en: "Applying handwritten text recognition (HTR) to digitise high-school essays in Portuguese" } },
@@ -501,6 +507,8 @@ const SITE = {
   publications: [
     { y: 2026, t: "A Mixed User-Centered Approach to Enable Augmented Intelligence in Intelligent Tutoring Systems: The Case of MathAIde App", doi: "10.1080/10447318.2025.2553778", a: "G. Guerino, L. Rodrigues, L. Bianchini, M. Alves, M. Marinho, T. Veloso, V. Macario, D. Dermeval, T. Vieira, I. I. Bittencourt, S. Isotani", v: "International Journal of Human–Computer Interaction, 42(8), 6558–6580", k: "journal", c: 2, topic: "aied", proj: "mathaide" },
     { y: 2026, t: "Redesigning the Validation of AI-Generated Content in an AIED-Unplugged System: A Participatory Design Study with Teachers", doi: "10.1007/978-3-032-29788-4_24", a: "E. Neto, M. Alves, V. Aguiar, A. Barros, M. Santos, J. Gomes, G. Silva, M. Siqueira, I. I. Bittencourt, S. Isotani, V. Macario, D. Dermeval, L. Rodrigues", v: "International Conference on Artificial Intelligence in Education (AIED)", k: "conference", topic: "aied", proj: "mathaide" },
+    { y: 2026, t: "RealMath: Reconhecimento de Escrita Matemática Manuscrita Infantil em Atividades Escolares Reais", a: "N. C. Silva, E. Souza, F. R. Cordeiro, R. Carvalho, S. Chevtchenko, L. Rodrigues, V. Macario", v: "Workshop of Undergraduate Works (WUW), SIBGRAPI", k: "conference", topic: "ocr", proj: "mathaide" },
+    { y: 2026, t: "Aritma: Aplicativo Offline para Apoio à Geração de Lista de Questões Matemáticas alinhadas à BNCC com SLMs", a: "L. Rodrigues, A. Barros, M. Monteiro, M. Alves, E. Neto, V. Aguiar, J. G. Silva, D. Dermeval, I. I. Bittencourt, S. Isotani, V. Macario", v: "Apps.Edu — Feira de Aplicativos Educacionais", k: "conference", topic: "aied", proj: "mathaide" },
     { y: 2025, t: "Forecasting AWS Spot Prices: Comparative Analysis of Deep Learning Architectures and Residual Auto-Correlation", doi: "10.1007/s11761-025-00475-6", a: "S. Berdine, V. Macario, R. W. A. de Medeiros", v: "Service Oriented Computing and Applications", k: "journal", topic: "ml" },
     { y: 2025, t: "“Small Device, Big Decision”: Comparing Lightweight LLMs' Computational Performance and Output Quality for AIED Unplugged", doi: "10.1007/978-3-031-99267-4_20", a: "M. Monteiro, A. Barros, L. Rodrigues, D. Dermeval, I. I. Bittencourt, S. Isotani, V. Macario", v: "International Conference on Artificial Intelligence in Education (AIED)", k: "conference", c: 4, topic: "aied", proj: "mathaide" },
     { y: 2025, t: "Geração de Questões com LLMs Leves: Um Estudo Inicial sobre a Percepção de Educadores", doi: "10.5753/sbie.2025.12574", a: "M. M. Santos, A. P. Barros, E. Santos, J. G. da Silva, S. Isotani, I. I. Bittencourt, V. Macario", v: "Simpósio Brasileiro de Informática na Educação (SBIE)", k: "conference", c: 4, topic: "aied", proj: "mathaide" },

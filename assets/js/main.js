@@ -393,7 +393,7 @@
   }
 
   const LINK_LABELS = {
-    lattes: "Lattes", scholar: "Google Scholar", researchgate: "ResearchGate",
+    lattes: "Lattes", scholar: "Google Scholar", orcid: "ORCID", researchgate: "ResearchGate",
     github: "GitHub", linkedin: "LinkedIn", vcl: "VCL", aibox: "AIBox Lab", nees: "NEES/UFAL",
   };
 
