@@ -479,17 +479,13 @@ const SITE = {
   /* ---------- Serviço acadêmico ---------- */
   service: {
     pt: [
-      "Um dos líderes do <strong>VCL — Visual Computing Lab</strong>, laboratório de pesquisa em computação visual do Departamento de Computação da UFRPE, e membro do <strong>AIBox Lab</strong>, laboratório de inteligência artificial do mesmo departamento, e membro pesquisador do <strong>NEES</strong>, na UFAL.",
-      "Membro do Conselho Técnico Administrativo do Departamento de Computação da UFRPE.",
+      "Um dos líderes do <a href='https://dc.ufrpe.br/node/14' target='_blank' rel='noopener'><strong>VCL — Visual Computing Lab</strong></a>, laboratório de pesquisa em computação visual do Departamento de Computação da UFRPE, e membro do <a href='https://aiboxlab.org' target='_blank' rel='noopener'><strong>AIBox Lab</strong></a>, laboratório de inteligência artificial do mesmo departamento, e membro pesquisador do <a href='https://www.nees.ufal.br' target='_blank' rel='noopener'><strong>NEES</strong></a>, na UFAL.",
       "Participação em mais de 30 bancas de mestrado, doutorado, qualificação e trabalhos de conclusão na UFRPE, UFPE e UPE.",
-      "Membro de bancas de concurso público para professor do magistério superior (UFRPE, 2015 e 2019).",
       "Revisor e autor em BRACIS, SIBGRAPI, ENIAC, SBIE, AIED, IJCNN e ICTAI.",
     ],
     en: [
-      "One of the leaders of <strong>VCL — Visual Computing Lab</strong>, the visual computing research lab of UFRPE's Department of Computing, and a member of <strong>AIBox Lab</strong>, the artificial intelligence laboratory of the same department, and a research member of <strong>NEES</strong>, at UFAL.",
-      "Member of the Technical-Administrative Council of UFRPE's Department of Computing.",
+      "One of the leaders of <a href='https://dc.ufrpe.br/node/14' target='_blank' rel='noopener'><strong>VCL — Visual Computing Lab</strong></a>, the visual computing research lab of UFRPE's Department of Computing, and a member of <a href='https://aiboxlab.org' target='_blank' rel='noopener'><strong>AIBox Lab</strong></a>, the artificial intelligence laboratory of the same department, and a research member of <a href='https://www.nees.ufal.br' target='_blank' rel='noopener'><strong>NEES</strong></a>, at UFAL.",
       "Served on more than 30 master's, doctoral, qualifying, and undergraduate thesis committees at UFRPE, UFPE, and UPE.",
-      "Member of faculty hiring committees for tenured professorship (UFRPE, 2015 and 2019).",
       "Reviewer and author at BRACIS, SIBGRAPI, ENIAC, SBIE, AIED, IJCNN, and ICTAI.",
     ],
   },
