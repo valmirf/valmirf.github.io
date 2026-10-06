@@ -94,8 +94,8 @@ const SITE = {
       title: { pt: "MathAIde — Tutor Inteligente Desplugado", en: "MathAIde — Unplugged Intelligent Tutor" },
       role: { pt: "Coordenador principal", en: "Principal investigator" },
       desc: {
-        pt: "Sistema tutor inteligente para matemática do ensino fundamental projetado para funcionar <strong>sem internet e em celulares de baixo custo</strong>. O professor fotografa a atividade resolvida à mão; o sistema detecta e reconhece as equações manuscritas, classifica o tipo de erro com base em teoria pedagógica e devolve recomendações. Enfrenta a exclusão digital nas escolas públicas brasileiras.",
-        en: "An intelligent tutoring system for elementary mathematics designed to work <strong>without internet on low-cost phones</strong>. Teachers photograph handwritten work; the system detects and recognizes the handwritten equations, classifies the error type on pedagogical grounds, and returns recommendations. It addresses the digital divide in Brazilian public schools.",
+        pt: "Sistema tutor inteligente de matemática para o ensino fundamental, feito para rodar <strong>sem internet e em celulares de baixo custo</strong>. O professor fotografa a atividade resolvida à mão. O sistema detecta e reconhece as equações manuscritas, classifica o tipo de erro com base em teoria pedagógica e devolve recomendações. É uma resposta à exclusão digital nas escolas públicas brasileiras.",
+        en: "An intelligent tutoring system for elementary mathematics, built to run <strong>without internet on low-cost phones</strong>. The teacher photographs the work solved by hand. The system detects and recognises the handwritten equations, classifies the error type on pedagogical grounds and returns recommendations. It is an answer to the digital divide in Brazilian public schools.",
       },
       contributions: {
         pt: [
@@ -136,8 +136,8 @@ const SITE = {
       title: { pt: "Monitoramento Automático de Banhistas", en: "Automatic Bather Monitoring" },
       role: { pt: "Coordenador · Financiamento FACEPE", en: "Coordinator · Funded by FACEPE" },
       desc: {
-        pt: "Protótipo de sistema de visão computacional para detectar e rastrear banhistas nas praias da região metropolitana do Recife — uma das áreas com maior incidência de acidentes com tubarões do mundo. O desafio técnico é considerável: pessoas parcialmente submersas, escala reduzida, ondas, reflexo e variação extrema de iluminação.",
-        en: "A computer vision prototype to detect and track bathers on the beaches of metropolitan Recife — one of the world's highest-incidence shark accident areas. The technical challenge is substantial: partially submerged people, small scale, waves, glare, and extreme lighting variation.",
+        pt: "Protótipo de sistema de visão computacional para detectar e rastrear banhistas nas praias da região metropolitana do Recife, uma das áreas com maior incidência de acidentes com tubarões do mundo. O desafio técnico é grande: pessoas parcialmente submersas, escala reduzida, ondas, reflexo e variação extrema de iluminação.",
+        en: "A computer vision prototype to detect and track bathers on the beaches of metropolitan Recife, one of the world's highest-incidence shark accident areas. The technical challenge is large: partially submerged people, small scale, waves, glare, and extreme lighting variation.",
       },
       contributions: {
         pt: [
@@ -176,8 +176,8 @@ const SITE = {
       title: { pt: "MyFood — Reconhecimento de Alimentos", en: "MyFood — Food Recognition" },
       role: { pt: "Orientador", en: "Supervisor" },
       desc: {
-        pt: "Sistema de segmentação e classificação de alimentos em imagens de pratos, voltado ao monitoramento nutricional automático. O trabalho inclui a construção de um <em>dataset</em> próprio de refeições brasileiras — um recurso escasso na literatura, dominada por culinária asiática e norte-americana.",
-        en: "A food segmentation and classification system for plate images, aimed at automatic nutritional monitoring. The work includes building a dedicated dataset of Brazilian meals — a scarce resource in a literature dominated by Asian and North American cuisine.",
+        pt: "Sistema de segmentação e classificação de alimentos em imagens de pratos, voltado ao monitoramento nutricional automático. O trabalho inclui a construção de um <em>dataset</em> próprio de refeições brasileiras, recurso escasso numa literatura dominada por culinária asiática e norte-americana.",
+        en: "A food segmentation and classification system for plate images, aimed at automatic nutritional monitoring. The work includes building a dedicated dataset of Brazilian meals, a scarce resource in a literature dominated by Asian and North American cuisine.",
       },
       tags: ["Segmentação", "Saúde", "Dataset"],
       outputs: {
@@ -194,14 +194,14 @@ const SITE = {
       },
       from: 2017,
       to: 2020,
-      blurb: { pt: "Segmentação automática de cromossomos em metáfase para dosimetria biológica, atacando uma contagem manual que leva de 6 a 8 horas por amostra.", en: "Automatic metaphase chromosome segmentation for biological dosimetry, attacking a manual count that takes 6 to 8 hours per sample." },
+      blurb: { pt: "Segmentação automática de cromossomos em metáfase para dosimetria biológica, onde a contagem manual leva de 6 a 8 horas por amostra.", en: "Automatic metaphase chromosome segmentation for biological dosimetry, where the manual count takes 6 to 8 hours per sample." },
       periodLabel: { pt: "2017 — 2020", en: "2017 — 2020" },
       status: "done",
       title: { pt: "Análise de Cromossomos para Dosimetria Biológica", en: "Chromosome Analysis for Biological Dosimetry" },
       role: { pt: "Pesquisador · parceria com o CRCN-NE", en: "Researcher · with CRCN-NE" },
       desc: {
-        pt: "Dosimetria biológica estima a dose de radiação absorvida por uma pessoa contando aberrações em cromossomos em metáfase — um processo manual, lento e dependente de especialistas raros. Desenvolvemos abordagens fuzzy-adaptativas e de aprendizado profundo para segmentar e classificar cromossomos automaticamente.",
-        en: "Biological dosimetry estimates absorbed radiation dose by counting aberrations in metaphase chromosomes — a manual, slow process dependent on scarce specialists. We developed fuzzy-adaptive and deep-learning approaches to segment and classify chromosomes automatically.",
+        pt: "Dosimetria biológica estima a dose de radiação absorvida por uma pessoa contando aberrações em cromossomos em metáfase. É um processo manual, lento e dependente de especialistas raros. Desenvolvemos abordagens fuzzy-adaptativas e de aprendizado profundo para segmentar e classificar cromossomos automaticamente.",
+        en: "Biological dosimetry estimates absorbed radiation dose by counting aberrations in metaphase chromosomes. The process is manual, slow and dependent on scarce specialists. We developed fuzzy-adaptive and deep-learning approaches to segment and classify chromosomes automatically.",
       },
       tags: ["Imagem Médica", "Fuzzy", "Deep Learning"],
       outputs: {
@@ -220,13 +220,13 @@ const SITE = {
       title: { pt: "Reconhecimento de Gestos em Tempo Real", en: "Real-Time Gesture Recognition" },
       role: { pt: "Orientador", en: "Supervisor" },
       desc: {
-        pt: "Reconhecimento de posturas de mão sob restrição dupla: alta acurácia e execução em tempo real. Tratamos o problema como <strong>otimização multiobjetivo</strong> — buscando explicitamente a fronteira de Pareto entre custo computacional e desempenho, em vez de otimizar acurácia isoladamente.",
-        en: "Hand posture recognition under a dual constraint: high accuracy and real-time execution. We framed it as <strong>multi-objective optimization</strong> — explicitly seeking the Pareto frontier between computational cost and performance, rather than optimizing accuracy alone.",
+        pt: "Reconhecimento de posturas de mão sob restrição dupla: alta acurácia e execução em tempo real. Tratamos o problema como <strong>otimização multiobjetivo</strong>, buscando explicitamente a fronteira de Pareto entre custo computacional e desempenho, em vez de otimizar acurácia isoladamente.",
+        en: "Hand posture recognition under a dual constraint: high accuracy and real-time execution. We framed it as <strong>multi-objective optimization</strong>, explicitly seeking the Pareto frontier between computational cost and performance, rather than optimizing accuracy alone.",
       },
       tags: ["Otimização Multiobjetivo", "CNN", "Tempo Real"],
       outputs: {
-        pt: "<em>Applied Soft Computing</em> (2018) e <em>Expert Systems with Applications</em> (2018) — meus dois trabalhos mais citados, ambos em periódicos Q1. São citados por grupos em mais de uma dezena de países, entre eles Índia, China, Vietnã, Turquia, Egito, Marrocos e Peru, com desdobramentos em reconhecimento de línguas de sinais, robótica e reabilitação.",
-        en: "<em>Applied Soft Computing</em> (2018) and <em>Expert Systems with Applications</em> (2018) — my two most-cited works, both in Q1 journals. They are cited by groups in more than a dozen countries, including India, China, Vietnam, Turkey, Egypt, Morocco, and Peru, with follow-on work in sign language recognition, robotics, and rehabilitation.",
+        pt: "<em>Applied Soft Computing</em> (2018) e <em>Expert Systems with Applications</em> (2018), meus dois trabalhos mais citados, ambos em periódicos Q1. São citados por grupos em mais de uma dezena de países, entre eles Índia, China, Vietnã, Turquia, Egito, Marrocos e Peru, com desdobramentos em reconhecimento de línguas de sinais, robótica e reabilitação.",
+        en: "<em>Applied Soft Computing</em> (2018) and <em>Expert Systems with Applications</em> (2018), my two most-cited works, both in Q1 journals. They are cited by groups in more than a dozen countries, including India, China, Vietnam, Turkey, Egypt, Morocco, and Peru, with follow-on work in sign language recognition, robotics, and rehabilitation.",
       },
     },
     {
@@ -244,8 +244,8 @@ const SITE = {
       title: { pt: "Avaliação Automática de Redações", en: "Automated Essay Assessment" },
       role: { pt: "Pesquisador · coordenação de Rafael Ferreira Mello", en: "Researcher · coordinated by Rafael Ferreira Mello" },
       desc: {
-        pt: "São dois problemas encadeados, e cada um é de uma área. Primeiro é preciso <strong>ler</strong>: a redação chega manuscrita, e <strong>reconhecimento de texto manuscrito</strong> em produção escolar, com letra irregular, papel pautado e foto tirada de celular, é visão computacional. Só depois vem <strong>avaliar</strong>: restauração e verificação de pontuação com transformers explicáveis, pontuação automática com classificadores por votação e medida de coerência temática. A qualidade da segunda etapa depende inteiramente da primeira.",
-        en: "These are two chained problems, one from each field. First the text has to be <strong>read</strong>: the essay arrives handwritten, and <strong>handwritten text recognition</strong> on school work, with irregular handwriting, ruled paper and a photo taken on a phone, is computer vision. Only then comes <strong>assessment</strong>: explainable transformer-based punctuation restoration and verification, automated scoring with voting classifiers, and thematic coherence measurement. The quality of the second stage depends entirely on the first.",
+        pt: "São dois problemas encadeados, um de cada área. Primeiro é preciso <strong>ler</strong>. A redação chega manuscrita, com letra irregular, papel pautado e foto tirada de celular, e reconhecer esse texto é <strong>visão computacional</strong>. Só depois vem <strong>avaliar</strong>: restauração e verificação de pontuação com transformers explicáveis, pontuação automática com classificadores por votação e medida de coerência temática. A qualidade da segunda etapa depende inteiramente da primeira.",
+        en: "These are two chained problems, one from each field. First the text has to be <strong>read</strong>. The essay arrives handwritten, with irregular handwriting, ruled paper and a photo taken on a phone, and recognising it is <strong>computer vision</strong>. Only then comes <strong>assessment</strong>: explainable transformer-based punctuation restoration and verification, automated scoring with voting classifiers, and thematic coherence measurement. The quality of the second stage depends entirely on the first.",
       },
       tags: ["Reconhecimento de manuscrito", "Visão Computacional", "NLP", "Transformers", "XAI"],
       contributions: {
@@ -263,8 +263,8 @@ const SITE = {
         ],
       },
       outputs: {
-        pt: "A linha nasceu de um termo de execução descentralizada do <strong>FNDE/Ministério da Educação</strong> — a <em>Plataforma Adaptativa de Avaliação e Diagnóstico Pedagógico de Textos</em>, coordenada por <strong>Rafael Ferreira Mello</strong> e executada pelo NEES/UFAL com a UFRPE entre 2021 e 2023, no âmbito do programa Brasil na Escola. Participo como pesquisador. A ferramenta ficou aberta a qualquer escola pública pela Plataforma Integrada Brasil na Escola. Publicações em <em>Expert Systems with Applications</em> (2024), PROPOR 2024, ENIAC 2023 e SBIE 2023.",
-        en: "The line began with a decentralised execution agreement from the <strong>FNDE / Brazilian Ministry of Education</strong> — the <em>Adaptive Platform for Assessment and Pedagogical Diagnosis of Texts</em>, coordinated by <strong>Rafael Ferreira Mello</strong> and run by NEES/UFAL with UFRPE between 2021 and 2023, under the Brasil na Escola programme. I take part as a researcher. The tool was open to any public school through the Plataforma Integrada Brasil na Escola. Published in <em>Expert Systems with Applications</em> (2024), PROPOR 2024, ENIAC 2023, and SBIE 2023.",
+        pt: "A linha nasceu de um termo de execução descentralizada do <strong>FNDE/Ministério da Educação</strong>, a <em>Plataforma Adaptativa de Avaliação e Diagnóstico Pedagógico de Textos</em>, coordenada por <strong>Rafael Ferreira Mello</strong> e executada pelo NEES/UFAL com a UFRPE entre 2021 e 2023, no âmbito do programa Brasil na Escola. Participo como pesquisador. A ferramenta ficou aberta a qualquer escola pública pela Plataforma Integrada Brasil na Escola. Publicações em <em>Expert Systems with Applications</em> (2024), PROPOR 2024, ENIAC 2023 e SBIE 2023.",
+        en: "The line began with a decentralised execution agreement from the <strong>FNDE / Brazilian Ministry of Education</strong>, the <em>Adaptive Platform for Assessment and Pedagogical Diagnosis of Texts</em>, coordinated by <strong>Rafael Ferreira Mello</strong> and run by NEES/UFAL with UFRPE between 2021 and 2023, under the Brasil na Escola programme. I take part as a researcher. The tool was open to any public school through the Plataforma Integrada Brasil na Escola. Published in <em>Expert Systems with Applications</em> (2024), PROPOR 2024, ENIAC 2023, and SBIE 2023.",
       },
     },
     {
@@ -277,8 +277,8 @@ const SITE = {
       to: null,
       featured: true,
       blurb: {
-        pt: "Modelos de linguagem e pictogramas para comunicação alternativa e ampliada em português — a língua para a qual não existia corpus público.",
-        en: "Language models and pictograms for augmentative and alternative communication in Portuguese — the language that had no public corpus.",
+        pt: "Modelos de linguagem e pictogramas para comunicação alternativa e ampliada em português, a língua para a qual não existia corpus público.",
+        en: "Language models and pictograms for augmentative and alternative communication in Portuguese, the language that had no public corpus.",
       },
       periodLabel: { pt: "2025 — atual", en: "2025 — present" },
       status: "active",
@@ -288,8 +288,8 @@ const SITE = {
       },
       role: { pt: "Pesquisador · coordenação de André Câmara", en: "Researcher · coordinated by André Câmara" },
       desc: {
-        pt: "Comunicação alternativa e ampliada é o conjunto de recursos que permite alguém se expressar quando a fala não está disponível — pranchas de pictogramas, seleção assistida, construção de sentenças. O levantamento que abriu o projeto mostrou que <strong>não existe corpus público de CAA em português brasileiro</strong>: tudo o que havia era em inglês, ou fechado. Sem corpus não há modelo, então a primeira frente foi construí-lo, a partir do acervo aberto de pictogramas do <a href=\"https://arasaac.org\" target=\"_blank\" rel=\"noopener\">ARASAAC</a>.",
-        en: "Augmentative and alternative communication is the set of resources that lets someone express themselves when speech is unavailable — pictogram boards, assisted selection, sentence construction. The survey that opened the project found that <strong>no public AAC corpus exists in Brazilian Portuguese</strong>: what existed was in English, or closed. Without a corpus there is no model, so the first front was building one, from the open pictogram collection of <a href=\"https://arasaac.org\" target=\"_blank\" rel=\"noopener\">ARASAAC</a>.",
+        pt: "Comunicação alternativa e ampliada é o conjunto de recursos que permite alguém se expressar quando a fala não está disponível: pranchas de pictogramas, seleção assistida, construção de sentenças. O levantamento que abriu o projeto mostrou que <strong>não existe corpus público de CAA em português brasileiro</strong>: tudo o que havia era em inglês, ou fechado. Sem corpus não há modelo, então a primeira frente foi construí-lo, a partir do acervo aberto de pictogramas do <a href=\"https://arasaac.org\" target=\"_blank\" rel=\"noopener\">ARASAAC</a>.",
+        en: "Augmentative and alternative communication is the set of resources that lets someone express themselves when speech is unavailable: pictogram boards, assisted selection, sentence construction. The survey that opened the project found that <strong>no public AAC corpus exists in Brazilian Portuguese</strong>: what existed was in English, or closed. Without a corpus there is no model, so the first front was building one, from the open pictogram collection of <a href=\"https://arasaac.org\" target=\"_blank\" rel=\"noopener\">ARASAAC</a>.",
       },
       contributions: {
         pt: [
@@ -322,8 +322,8 @@ const SITE = {
       title: { pt: "Agrupamento Semissupervisionado Adaptativo", en: "Adaptive Semi-Supervised Clustering" },
       role: { pt: "Doutorado e mestrado · UFPE", en: "Doctorate and master's · UFPE" },
       desc: {
-        pt: "Linha fundacional da minha pesquisa. Desenvolvi uma família de algoritmos particionais que incorporam supervisão parcial diretamente na função objetivo e aprendem <strong>pesos adaptativos por variável e por grupo</strong> durante a otimização — incluindo o NebFuzz, uma variante <em>p</em>-exponencial ajustável e versões ISODATA adaptativas.",
-        en: "The foundational line of my research. I developed a family of partitional algorithms that embed partial supervision directly in the objective function and learn <strong>adaptive per-variable, per-cluster weights</strong> during optimization — including NebFuzz, an adjustable <em>p</em>-exponential variant, and adaptive ISODATA versions.",
+        pt: "Linha fundacional da minha pesquisa. Desenvolvi uma família de algoritmos particionais que incorporam supervisão parcial diretamente na função objetivo e aprendem <strong>pesos adaptativos por variável e por grupo</strong> durante a otimização, entre eles o NebFuzz, uma variante <em>p</em>-exponencial ajustável e versões ISODATA adaptativas.",
+        en: "The foundational line of my research. I developed a family of partitional algorithms that embed partial supervision directly in the objective function and learn <strong>adaptive per-variable, per-cluster weights</strong> during optimization, among them NebFuzz, an adjustable <em>p</em>-exponential variant, and adaptive ISODATA versions.",
       },
       tags: ["Fuzzy Clustering", "Otimização", "Bioinformática"],
       outputs: {
